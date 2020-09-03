@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário para o aprendizado do autor */
+/* Cliente: Instituto Mato-grossense de Tênis - IMT */
+/* Descrição: Entidade sem fins lucrativos de fomento do tênis em prol crianças e adolescentes */
+/* Protocolo de Produção: 0010108-2020 */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* GLOBAL */
+
+@font-face {
+  font-family: 'Brush Script';
+  src: url(_fonts/nanumBrushScriptRegular.ttf);
+}
+
+:root {
+  --color-background: #b4d4f0;
+  --color-nav-topbar: #4A548C;
+  --color-nav-bottombar: #366CD9;
+  --color-header: #4A548C;
+  --color-main: #b4d4f0;
+  --color-publicidade: #79AEF2;
+  --color-main-conteudo1: #4E7CD9;
+  --color-main-conteudo2: #79AEF2;
+  --color-main-conteudo3: #4E7CD9;
+  --color-main-conteudo4: #79AEF2;
+  --color-footer: #4A548C;
+  --color-titulos1: #FFFAFA;
+  --color-titulos2: #000000;
+  --color-subtitulo1: #FFFAFA;
+  --color-subtitulo2: #000000;
+  --color-texto1: #FFFAFA;
+  --color-texto2: #000000;
+  --color-lista: #366CD9;
+  --color-lista-itens: #4A548C;
+  --color-lista-itens-link: #FFFAFA;
+  --color-lista-itens-visited: #91C5F2;
+  --color-lista-itens-hover: #000000;
+  --color-lista-itens-active: #4A548C;
+  --color-lista-background-hover: #91C5F2;
+  --color-button-slider: #FFFAFA;
+  --padding-main-titulo1: 1rem 2rem;
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  font-weight: 500;
+  font-size: 3.8rem;
+}
+h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  font-weight: 500;
+  font-size: 3.4rem;
+}
+h3, h4 {
+  font-family: 'Brush Script', sans-serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+}
+h5, h6 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-size: 3.0rem;
+}
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.8rem;
+  text-indent: 0; /* Indentação na primeira linha do parágrafo */
+}
+a {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  background-color: var(--color-background);
+}
+
+#container_pagehome {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
+}
+
+@media only screen and (max-width: 700px) {
+  :root {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  :root {
+    font-size: 42%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  :root {
+    font-size: 45%;
+  }
+}
+

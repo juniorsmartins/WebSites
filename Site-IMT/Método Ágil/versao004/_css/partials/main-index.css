@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário para o aprendizado do autor */
+/* Cliente: Instituto Mato-grossense de Tênis - IMT */
+/* Descrição: Entidade sem fins lucrativos de fomento do tênis em prol crianças e adolescentes */
+/* Protocolo de Produção: 0010108-2020 */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* MAIN */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container_index .area_main {
+  grid-area: conteudo;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: var(--tamanho-grid-template-columns);
+  grid-template-areas: 
+    ". sobre sobre sobre sobre ."
+    ". projetos projetos projetos projetos ."
+    ". contatos contatos patronos patronos ."
+    ". contatos contatos patronos patronos ."
+    ". contatos contatos patronos patronos ."
+    ". contatos contatos patronos patronos .";
+  background: var(--background-image-main);
+}
+  .area_main .main_sobre {
+    grid-area: sobre;
+    width: 100%;
+    height: auto;
+    margin: var(--margin-main-sections);
+    padding-bottom: var(--padding-bottom-main-sections);
+    background: var(--background-image-footer-tres);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". titulo-sobre ."
+    "historia missao presidente"
+    ". button-sobre .";
+  }
+    .area_main .main_sobre h2 {
+      text-align: center;
+      padding: var(--padding-main-titulo1);
+    }
+    .area_main .main_sobre .sobre_chamada {
+      grid-area: titulo-sobre;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .area_main .main_sobre .sobre_button {
+      grid-area: button-sobre;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+      .area_main .main_sobre .sobre_button button {
+      cursor: pointer;
+      margin: 3rem 4rem 0 4rem;
+      padding: 1rem 5rem;
+      font-size: 2rem;
+      color: #FFFAFA;
+      background: var(--background-image-header);
+      }
+      .area_main .main_sobre .sobre_button button:hover {
+        transition-duration: 1s;
+        color: #000000;
+        background: var(--background-image-header-nav);
+      }
+    .area_main .main_sobre .sobre_historia {
+      grid-area: historia;
+      width: 99%;
+      height: auto;
+      text-align: justify;
+      padding: var(--padding-main-sobre-articles);
+      background-color: var(--background-color-sobre-articles);
+    }
+    .area_main .main_sobre .sobre_missao {
+      grid-area: missao;
+      width: 99%;
+      height: auto;
+      text-align: center;
+      padding: var(--padding-main-sobre-articles);
+      background-color: var(--background-color-sobre-articles);
+    }
+    .area_main .main_sobre .sobre_presidente {
+      grid-area: presidente;
+      width: 99%;
+      height: auto;
+      text-align: justify;
+      padding: var(--padding-main-sobre-articles);
+      background-color: var(--background-color-sobre-articles);
+    }
+      .area_main .main_sobre .sobre_presidente img {
+        width: 20rem;
+        margin: 1rem 2rem 1rem 0;
+        float: left;
+      }
+
+
+  .area_main .main_projetos {
+    grid-area: projetos;
+    width: 100%;
+    height: auto;
+    margin: var(--margin-main-sections);
+    padding-bottom: var(--padding-bottom-main-sections);
+    background: var(--background-image-footer-um);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". titulo-projetos ."
+    "tenissocial topdez cttenis"
+    ". button-projetos .";
+  }
+    .area_main .main_projetos h2 {
+      text-align: center;
+      padding: var(--padding-main-titulo1);
+    }
+    .area_main .main_projetos .projetos_chamada {
+      grid-area: titulo-projetos;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .area_main .main_projetos .projetos_button {
+      grid-area: button-projetos;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+      .area_main .main_projetos .projetos_button button {
+      cursor: pointer;
+      margin: 3rem 4rem 0 4rem;
+      padding: 1rem 5rem;
+      font-size: 2rem;
+      color: #FFFAFA;
+      background: var(--background-image-header);
+      }
+      .area_main .main_projetos .projetos_button button:hover {
+        transition-duration: 1s;
+        color: #000000;
+        background: var(--background-image-header-nav);
+      }
+    .area_main .main_projetos .projetos_tenissocial {
+      grid-area: tenissocial;
+      width: 99%;
+      height: auto;
+      text-align: justify;
+      padding: var(--padding-main-projetos-articles);
+      background-color: var(--background-color-projetos-articles);
+    }
+    .area_main .main_projetos .projetos_topdez {
+      grid-area: topdez;
+      width: 99%;
+      height: auto;
+      text-align: justify;
+      padding: var(--padding-main-projetos-articles);
+      background-color: var(--background-color-projetos-articles);
+    }
+    .area_main .main_projetos .projetos_cttenis {
+      grid-area: cttenis;
+      width: 99%;
+      height: auto;
+      text-align: justify;
+      padding: var(--padding-main-projetos-articles);
+      background-color: var(--background-color-projetos-articles);
+    }
+
+
+  .area_main .main_contatos {
+    grid-area: contatos;
+    width: 99%;
+    height: auto;
+    margin: var(--margin-main-sections);
+    padding-bottom: var(--padding-bottom-main-sections);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "redessociais redessociais"
+      "redessociais redessociais"
+      "endereco contatos"
+      "mapagoogle mapagoogle";
+  }
+    .area_main .main_contatos h5 {
+      text-transform: uppercase;
+    }
+    .area_main .main_contatos .contatos_redessociais {
+      grid-area: redessociais;
+      width: 100%;
+      height: auto;
+      padding: var(--padding-main-contatos-articles);
+      border-bottom: var(--border-bottom-main-sections);
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      align-self: center;
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+      .area_main .main_contatos .contatos_redessociais i {
+        font-size: 8rem;
+        margin: 0 1rem;
+        color: black;
+      }
+    .area_main .main_contatos .contatos_endereco {
+      grid-area: endereco;
+      width: 100%;
+      height: auto;
+      padding: var(--padding-main-contatos-articles);
+      border-right: var(--border-bottom-main-sections);
+      border-bottom: var(--border-bottom-main-sections);
+    }
+    .area_main .main_contatos .contatos_contatos {
+      grid-area: contatos;
+      width: 100%;
+      height: auto;
+      padding: var(--padding-main-contatos-articles);
+      border-bottom: var(--border-bottom-main-sections);
+    }
+    .area_main .main_contatos .contatos_mapagoogle {
+      grid-area: mapagoogle;
+      width: 100%;
+      height: auto;
+      margin-top: 5rem;
+      padding: var(--padding-main-contatos-articles);
+    }
+      .area_main .main_contatos .contatos_mapagoogle iframe {
+        width: 100%;
+        height: auto;
+      }
+
+
+  .area_main .main_patronos {
+    grid-area: patronos;
+    width: 99%;
+    height: auto;
+    margin: var(--margin-main-sections);
+    padding-bottom: var(--padding-bottom-main-sections);
+    text-align: center;
+    text-transform: uppercase;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "patrocinadores patrocinadores"
+      "patrocinadores patrocinadores"
+      "parceiros apoiadores"
+      "parceiros apoiadores";
+  }
+    .area_main .main_patronos h2 {
+      font-size: 3rem;
+      padding: var(--padding-main-titulo2);
+    }
+    .area_main .main_patronos img {
+      width: 12rem;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      align-self: center;
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+      margin: var(--margin-main-patronos-imgs);
+    }
+    .area_main .main_patronos .patronos_parceiros img {
+      width: 11rem;
+    }
+    .area_main .main_patronos .patronos_apoiadores img {
+      width: 10.5rem;
+    }
+    .area_main .main_patronos .patronos_patrocinadores {
+      grid-area: patrocinadores;
+      width: 100%;
+      height: auto;
+      padding: var(--padding-main-patronos);
+    }
+    .area_main .main_patronos .patronos_parceiros {
+      grid-area: parceiros;
+      width: 85%;
+      padding: var(--padding-main-patronos);
+    }
+    .area_main .main_patronos .patronos_apoiadores {
+      grid-area: apoiadores;
+      width: 85%;
+      padding: var(--padding-main-patronos);
+    }
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* MAIN CELULAR */
+
+@media only screen and (max-width: 700px) {
+  :root {
+    font-size: 30%;
+  }
+
+.container_index .area_main {
+  grid-area: conteudo;
+  display: grid;
+  grid-template-columns: 2% 1fr 2%;
+  grid-template-areas: 
+    ". sobre ."
+    ". projetos ."
+    ". contatos ."
+    ". patronos .";
+}
+
+  .area_main .main_sobre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .area_main .main_projetos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .area_main .main_contatos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .area_main .main_patronos {
+    display: flex;
+    flex-direction: column;  
+  }
+    .area_main .main_patronos .patronos_parceiros {
+      width: 100%;
+    }
+    .area_main .main_patronos .patronos_apoiadores {
+      width: 100%;
+    }
+
+}

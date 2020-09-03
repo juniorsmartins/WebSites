@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário para o aprendizado do autor */
+/* Cliente: Instituto Mato-grossense de Tênis - IMT */
+/* Descrição: Entidade sem fins lucrativos de fomento do tênis em prol crianças e adolescentes */
+/* Protocolo de Produção: 0010108-2020 */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* GLOBAL */
+
+@font-face {
+  font-family: 'Brush Script';
+  src: url(/_fonts/nanumBrushScriptRegular.ttf);
+}
+
+:root {
+  --background-image-body: url(../../_imgs/_backs/back01.jpg) repeat;
+  --background-image-header: url(../../_imgs/_backs/img03.png) repeat;
+  --background-image-header-nav: url(../../_imgs/_backs/img11.jpg) repeat;
+  --background-image-main: url(../../_imgs/_backs/img08.jpg) repeat;
+  --background-image-footer-um: url(../../_imgs/_backs/img01.png) repeat;
+  --background-image-footer-dois: url(../../_imgs/_backs/img05.png) repeat;
+  --background-color-sobre-articles: ;
+  --background-color-projetos-articles: ;
+  --tamanho-grid-template-columns: 10% 1fr 10%;
+  --color-background: red;
+  --color-nav-topbar: #4A548C;
+  --color-nav-bottombar: #366CD9;
+  --color-header: #4A548C;
+  --color-main: #b4d4f0;
+  --color-publicidade: #79AEF2;
+  --color-main-conteudo1: #4E7CD9;
+  --color-main-conteudo2: #79AEF2;
+  --color-main-conteudo3: #4E7CD9;
+  --color-main-conteudo4: #79AEF2;
+  --color-footer: #4A548C;
+  --color-titulos1: #FFFAFA;
+  --color-titulos2: #000000;
+  --color-subtitulo1: #FFFAFA;
+  --color-subtitulo2: #000000;
+  --color-texto1: #FFFAFA;
+  --color-texto2: #000000;
+  --color-lista: #366CD9;
+  --color-lista-itens: #4A548C;
+  --color-lista-itens-link: #FFFAFA;
+  --color-lista-itens-visited: #91C5F2;
+  --color-lista-itens-hover: #000000;
+  --color-lista-itens-active: #4A548C;
+  --color-lista-background-hover: #91C5F2;
+  --color-button-slider: #FFFAFA;
+  --margin-main-sections: 2rem 0;
+  --margin-main-patronos-imgs: 1rem 1rem;
+  --padding-main-titulo1: 1rem 2rem 3rem;
+  --padding-main-titulo2: 2rem 2rem;
+  --padding-main-sobre-articles: 1rem 2rem;
+  --padding-main-projetos-articles: 1rem 2rem;
+  --padding-main-contatos-articles: 1rem 2rem;
+  --padding-main-patronos: 1rem 2rem;
+  --padding-bottom-main-sections: 3rem;
+  --border-bottom-main-sections: 0.1rem solid #a7a4a4;
+
+font-size: 45%;
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  font-weight: 500;
+  font-size: 3.8rem;
+}
+h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  font-weight: 500;
+  font-size: 3.4rem;
+}
+h3, h4 {
+  font-family: 'Brush Script', sans-serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+}
+h5, h6 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-size: 3.0rem;
+}
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.8rem;
+  text-indent: 0; /* Indentação na primeira linha do parágrafo */
+}
+a {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body { 
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background: var(--background-image-body);
+}
+
+.container_patronos {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-areas: 
+    "cabecalho cabecalho cabecalho"
+    "cabecalho cabecalho cabecalho"
+    "cabecalho cabecalho cabecalho"
+    "conteudo conteudo conteudo"
+    "conteudo conteudo conteudo"
+    "conteudo conteudo conteudo"
+    "rodape1 rodape1 rodape1"
+    "rodape1 rodape1 rodape1"
+    "rodape2 rodape2 rodape2";
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* CONTAINER CELULAR */
+
+
+@media only screen and (max-width: 700px) {
+  :root {
+    font-size: 30%;
+  }
+
+  .container_patronos {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+      "cabecalho"
+      "cabecalho"
+      "conteudo"
+      "conteudo"
+      "conteudo"
+      "conteudo"
+      "conteudo"
+      "conteudo"
+      "rodape1"
+      "rodape1"
+      "rodape2";
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  :root {
+    font-size: 33%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  :root {
+    font-size: 45%;
+  }
+}

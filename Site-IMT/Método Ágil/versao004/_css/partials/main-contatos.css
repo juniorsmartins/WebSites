@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário para o aprendizado do autor */
+/* Cliente: Instituto Mato-grossense de Tênis - IMT */
+/* Descrição: Entidade sem fins lucrativos de fomento do tênis em prol crianças e adolescentes */
+/* Protocolo de Produção: 0010108-2020 */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* MAIN */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container_contatos .area_main {
+  grid-area: conteudo;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: var(--tamanho-grid-template-columns);
+  grid-template-areas: 
+    ". contatos ."
+    ". contatos ."
+    ". contatos .";
+  background: var(--background-image-main);
+}
+  .area_main .main_contatos {
+    grid-area: contatos;
+    width: 99%;
+    height: auto;
+    margin: var(--margin-main-sections);
+    padding-bottom: var(--padding-bottom-main-sections);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "redessociais redessociais"
+      "redessociais redessociais"
+      "endereco contatos"
+      "mapagoogle mapagoogle";
+  }
+    .area_main .main_contatos h5 {
+      text-transform: uppercase;
+    }
+    .area_main .main_contatos .contatos_redessociais {
+      grid-area: redessociais;
+      width: 100%;
+      height: auto;
+      padding: var(--padding-main-contatos-articles);
+      border-bottom: var(--border-bottom-main-sections);
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      align-self: center;
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+      .area_main .main_contatos .contatos_redessociais i {
+        font-size: 18rem;
+        margin: 0 2rem 3rem;
+        color: black;
+      }
+    .area_main .main_contatos .contatos_endereco {
+      grid-area: endereco;
+      width: 100%;
+      height: auto;
+      margin: 4rem 0;
+      text-align: center;
+      padding: var(--padding-main-contatos-articles);
+      border-right: var(--border-bottom-main-sections);
+      border-bottom: var(--border-bottom-main-sections);
+    }
+    .area_main .main_contatos .contatos_contatos {
+      grid-area: contatos;
+      width: 100%;
+      height: auto;
+      margin: 4rem 0;
+      text-align: center;
+      padding: var(--padding-main-contatos-articles);
+      border-bottom: var(--border-bottom-main-sections);
+    }
+    .area_main .main_contatos .contatos_mapagoogle {
+      grid-area: mapagoogle;
+      width: 100%;
+      height: 80rem;
+      margin-top: 5rem;
+      padding: var(--padding-main-contatos-articles);
+    }
+      .area_main .main_contatos .contatos_mapagoogle iframe {
+        width: 100%;
+        height: 80rem;
+      }
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* MAIN CELULAR */
+
+@media only screen and (max-width: 700px) {
+  :root {
+    font-size: 30%;
+  }
+
+.container_contatos .area_main {
+  grid-area: conteudo;
+  display: grid;
+  grid-template-columns: 2% 1fr 2%;
+  grid-template-areas: 
+    ". contatos ."
+    ". contatos ."
+    ". contatos .";
+}
+  .area_main .main_contatos {
+    grid-area: contatos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .area_main .main_contatos article { 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+      .area_main .main_contatos .contatos_endereco {
+        border-right: 0;
+        margin: 0;
+      }
+      .area_main .main_contatos .contatos_contatos {
+        margin: 0;
+      }
+      .area_main .main_contatos .contatos_mapagoogle {
+      width: 90%;
+      height: 80rem;
+      margin-top: 5rem;
+      padding: var(--padding-main-contatos-articles);
+    }
+      .area_main .main_contatos .contatos_mapagoogle iframe {
+        width: 100%;
+        height: 80rem;
+      }
+
+
+
+}

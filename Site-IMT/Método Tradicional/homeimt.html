@@ -1,0 +1,77 @@
+<!DOCTYPE html!>
+<html lang="pt-br">
+
+  <head>
+    <!-- Título para o navegador -->
+    <title> Instituto Mato-grossense de Tênis - IMT </title>
+    <!-- Metadados para o navegador -->
+    <meta charset="UTF-8"/> <!-- Define conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Define janela de visualização para ter boa aparência nos dispositivos -->
+    <meta name="author" content="Junior Martins - https://juniormartins.46graus.com/"/> <!-- Define autor do código da página --> 
+    <meta name="description" content="O Instituto Mato-grossense de Tênis é uma entidade sem fins lucrativos que atua no fomento do esporte Tênis"/> <!-- Define descrição da página web -->
+    <meta name="keywords" content="tênis, tennis, IMT, Instituto, Mato-grossense, projeto social"/> <!-- Define palavras-chave da página -->
+    <meta http-equiv="refresh" content="55"/> <!-- Define o tempo de atualização do conteúdo -->
+    <!-- Link para CSS Out-File - Cascading Style Sheets -->
+    <link rel="stylesheet" type="text/css" href="_css/estiloclasse.css"/>  
+    <link rel="stylesheet" type="text/css" href="_css/estiloid.css"/>
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+  </head>
+
+  <body>
+    <!-- Área de Interface -->
+    <div class="area-interface">
+
+      <!-- Área de Menu -->
+      <nav class="area-menu">
+        <h1>Menu Principal</h1> <!-- Semântica - Fica oculto, mas orienta o navegador -->
+        <ul> <!-- Lista desordenada transformada em Menu -->
+          <li onmouseover="arteMenu('_img/artemenu1.png')" onmouseout="arteMenu('_img/artemenu1.png')"><a href="homeimt.html">HOME</a></li> 
+          <li onmouseover="arteMenu('_img/artemenu0.png')" onmouseout="arteMenu('_img/artemenu1.png')"><a href="instimt.html">Instituto</a></li>
+          <li onmouseover="arteMenu('_img/artemenu2.png')" onmouseout="arteMenu('_img/artemenu1.png')"><a href="projimt.html">Projetos</a></li>
+          <li onmouseover="arteMenu('_img/artemenu3.png')" onmouseout="arteMenu('_img/artemenu1.png')"><a href="parcimt.html">Parceiros</a></li>
+          <li onmouseover="arteMenu('_img/artemenu5.png')" onmouseout="arteMenu('_img/artemenu1.png')"><a href="contimt.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Área de Cabeçalho -->
+      <header class="area-cabecalho">
+        <img src="_img/logo1.png" id="logoimt" onmousemove="interageLogotipo(1)" onmouseout="interageLogotipo(2)" onclick="interageLogotipo(3)"/>
+        <img src="_img/artemenu1.png" title="Icone tenista pra Home do menu" id="icone" alt="Desenho de menino tenista"/>
+      </header>
+
+
+      <!-- Área de Conteúdo -->      
+      <section class="area-section">
+        <div class="subarea-section">
+          <article><p>Section: Article 1</p></article>
+          <article><p>Section: Article 2</p></article>
+          <article><p>Section: Article 3</p></article>
+        </div>
+      </section>
+
+
+      <!-- Área de Conteúdo lateral -->      
+      <aside class="area-aside">
+        <div class="subarea-aside">
+          <p>Aside 1</p>
+        </div>
+      </aside>
+
+
+      <!-- Área de Rodapé -->
+      <footer class="area-rodape">
+        <hgroup>
+          <h3>Direitos Reservados - Junior Martins</h3>
+          <p>
+            <a href="https://juniormartins.46graus.com/" target="_blank">Portfólio</a> - 
+            <a href="https://www.linkedin.com/in/juniorsmartins/" target="_blank">LinkedIn</a> -
+            <a href="https://github.com/juniorsmartins" target="_blank">GitHub</a> - 
+            <a href="https://www.instagram.com/juniors.martins/" target="_blank">Instagram</a>
+          </p>
+        </hgroup>
+      </footer>
+
+
+    </div>
+  </body>
+</html>

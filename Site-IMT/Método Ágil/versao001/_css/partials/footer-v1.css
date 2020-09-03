@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário para o aprendizado do autor */
+/* Cliente: Instituto Mato-grossense de Tênis - IMT */
+/* Descrição: Entidade sem fins lucrativos de fomento do tênis em prol crianças e adolescentes */
+/* Protocolo de Produção: 0010108-2020 */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* FOOTER */
+
+.area_footer {
+  margin: 0.2rem 0 0 0;
+  padding: 2rem;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
+  background-color: var(--color-footer);
+}
+  .area_footer h6 {
+    color: var(--color-texto1);
+  }
+  .area_footer p {
+    color: var(--color-texto1);
+  }
+
+

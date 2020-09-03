@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário para o aprendizado do autor */
+/* Cliente: Instituto Mato-grossense de Tênis - IMT */
+/* Descrição: Entidade sem fins lucrativos de fomento do tênis em prol crianças e adolescentes */
+/* Protocolo de Produção: 0010108-2020 */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* MAIN */
+
+#container_pagehome .area_main {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
+  background-color: var(--color-main);
+}
+
+/* ------------------------------------------------------- */
+/* Mais Sobre */
+
+.area_main .main_sobre {
+  width: 100vw;
+  margin: 0.2rem 0 0 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
+  background-color: var(--color-main-conteudo1);
+}
+  .area_main .main_sobre h2 {
+      text-align: center;
+      padding: var(--padding-main-titulo1);
+      color: var(--color-titulos1);
+  }
+  .area_main .main_sobre p {
+    text-align: justify;
+    padding: 0 0.5rem 1rem;
+    color: var(--color-texto2);
+  }
+  .area_main .main_sobre img {
+    width: 22rem;
+    height: auto;
+    padding: 1rem;
+    float: left;
+  }
+  .main_sobre .sobre_missao {
+    border-top: 0.1vw solid #91C5F2;
+  }
+  .main_sobre .sobre_presidente {
+    border-top: 0.1vw solid #91C5F2;
+  }
+
+/* ------------------------------------------------------- */
+/* Main Projetos */
+
+.area_main .main_projetos {
+  width: 100vw;
+  margin: 0.2rem 0 0 0;
+  padding: 2rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
+  background-color: var(--color-main-conteudo2);
+}
+  .area_main .main_projetos h2 {
+      text-align: center;
+      padding: var(--padding-main-titulo1);
+      color: var(--color-titulos1);
+  }
+  .area_main .main_projetos p {
+    text-align: justify;
+    padding: 0 0.5rem 1rem;
+    color: var(--color-texto2);
+  }
+  .area_main .main_projetos img {
+    width: 44rem;
+    height: auto;
+    padding: 1rem;
+  }
+    .main_projetos .projeto_tenisdez {
+      border-top: 0.1vw solid #91C5F2;
+    }
+    .main_projetos .projeto_ct {
+      border-top: 0.1vw solid #91C5F2;
+    }
+
+/* ------------------------------------------------------- */
+/* Main Patronos */
+
+.area_main .main_patronos {
+  width: 100vw;
+  margin: 0.2rem 0 0 0;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
+  background-color: var(--color-main-conteudo3);
+}
+  .area_main .main_patronos h2 {
+    text-align: center;
+    margin: auto;
+    padding: var(--padding-main-titulo1);
+    color: var(--color-titulos1);
+  }
+  .area_main .main_patronos img {
+    width: 20rem;
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+  }
+  .main_patronos .patronos_patrocinadores {
+    text-align: center;
+  }
+  .main_patronos .patronos_parceiros { 
+    text-align: center;
+    border-top: 0.1vw solid #91C5F2;
+  }
+  .main_patronos .patronos_apoiadores { 
+    text-align: center;
+    border-top: 0.1vw solid #91C5F2;
+  }
+
+/* ------------------------------------------------------- */
+/* Main Contatos */
+
+.area_main .main_contato {
+  width: 100vw;
+  height: auto;
+  margin: 0.2rem 0 0.2rem 0;
+  padding: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
+  background-color: var(--color-main-conteudo4);
+}
+  .area_main .main_contato h5 { 
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .area_main .main_contato p {
+    text-indent: 0;
+  }
+  .area_main .main_contato .contato_comunicacao a {
+    font-size: 2.3rem;
+    padding: 0 0 0 1.2rem;
+  }
+  .area_main .main_contato .contato_gps iframe {
+    width: 90vw;
+    height: auto;
+  }
+  .main_contato .contato_endereco { 
+    margin: 1rem 0;
+  }
+  .main_contato .contato_comunicacao {
+    margin: 1rem 0;
+  }
+  .main_contato .contato_gps {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* MAIN + 1000px */
+
+@media only screen and (min-width: 1000px) {
+
+  #container_pagehome .area_main {
+    margin-top: 0.2rem;
+  }
+
+    /* ----------------------------------------- */
+    /* SOBRE */
+
+    .area_main .main_sobre {
+      padding: 2rem 1rem;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: stretch;
+    }
+      .area_main .main_sobre h2 {
+      padding: 1rem 0.5rem 2.5rem 0.5rem;
+      }
+      .main_sobre .sobre_historia {
+        width: 32.5vw;
+        padding: 0rem 1rem;
+      }
+      .main_sobre .sobre_missao {
+        width: 32.5vw;
+        padding: 0rem 1rem;
+        border-top: 0vw solid #91C5F2;
+      }
+      .main_sobre .sobre_presidente {
+        width: 32.5vw;
+        padding: 0rem 1rem;
+        border-top: 0vw solid #91C5F2;
+      }
+
+    /* ----------------------------------------- */
+    /* PROJETOS */
+
+    .area_main .main_projetos {
+      padding: 2rem 1rem;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: stretch;
+    }
+      .area_main .main_projetos h2 {
+        padding: 1rem 0.5rem 2.5rem 0.5rem;
+      }
+      .main_projetos .projeto_tenissocial {
+        width: 32.5vw;
+        padding: 0rem 1rem;
+      }
+      .main_projetos .projeto_tenisdez {
+        width: 32.5vw;
+        padding: 0rem 1rem;
+        border-top: 0vw solid #91C5F2;
+      }
+      .main_projetos .projeto_ct {
+        width: 32.5vw;
+        padding: 0rem 1rem;
+        border-top: 0vw solid #91C5F2;
+      }
+
+    /* ----------------------------------------- */
+    /* PATRONOS */
+
+    .area_main .main_patronos {
+      padding: 2rem 1rem;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: stretch;
+    }
+      .area_main .main_patronos h2 {
+        padding: 1rem 0.5rem 2.5rem 0.5rem;
+      }
+      .area_main .main_patronos img {
+        width: 17rem;
+      }
+      .main_patronos .patronos_patrocinadores {
+        width: 32.5vw;
+        padding: 0rem 1rem;
+      }
+      .main_patronos .patronos_parceiros { 
+        width: 32.5vw;
+        padding: 0rem 1rem;
+        border-top: 0vw solid #91C5F2;
+      }
+      .main_patronos .patronos_apoiadores { 
+        width: 32.5vw;
+        padding: 0rem 1rem;
+        border-top: 0vw solid #91C5F2;
+      }
+        .main_patronos .patronos_apoiadores img {
+          width: 15.5rem;
+        }
+
+    /* ----------------------------------------- */
+    /* CONTATOS */
+
+    .area_main .main_contato {
+      margin: 0.2rem 0 0.2rem 0;
+      padding: 2rem;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: stretch;
+      text-align: center;
+    }
+        .area_main .main_contato h5 { 
+          padding: 1rem 0.5rem 2.5rem 0.5rem;
+          color: var(--color-titulos1);
+        }
+        .area_main .main_contato .contato_gps iframe {
+          width: 32.5vw;
+        }
+        .main_contato .contato_endereco { 
+          width: 32.5vw;
+          padding: 0rem 1rem;
+        }
+        .main_contato .contato_comunicacao {
+          width: 32.5vw;
+          padding: 0rem 1rem;
+        }
+        .main_contato .contato_gps {
+          width: 32.5vw;
+          padding: 0rem 1rem;
+        }
+
+
+
+}

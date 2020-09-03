@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário para o aprendizado do autor */
+/* Cliente: Instituto Mato-grossense de Tênis - IMT */
+/* Descrição: Entidade sem fins lucrativos de fomento do tênis em prol crianças e adolescentes */
+/* Protocolo de Produção: 0010108-2020 */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* HEADER */
+
+#container_pagehome .area_header {
+  width: 100vw;
+  height: 14rem;
+  margin: 0.2rem 0 0.2rem 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
+  background-color: var(--color-header);
+}
+
+#container_pagehome .area_header .slider {
+  display: block;
+  width: 100vw;
+  height: 14rem;
+  position: relative;
+}
+  #container_pagehome .area_header .slider li {
+    list-style: none;
+    position: absolute;
+  }
+    #container_pagehome .area_header .slider img {
+      width: 100vw;
+      height: 14rem;
+      vertical-align: top;
+      opacity: 0;
+      visibility: hidden;
+    }
+  #container_pagehome .area_header .slider input {
+    display: none;
+  }
+  #container_pagehome .area_header .slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+  }
+  #container_pagehome .area_header .slider label {
+    background-color: var(--color-button-slider);
+    width: 10px;
+    height: 10px;
+    bottom: 5px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    z-index: 10;
+  }
+    #container_pagehome .area_header .slider li:nth-child(1) label {
+      right: 55%;
+    }
+    #container_pagehome .area_header .slider li:nth-child(2) label {
+      right: 50%;
+    }
+    #container_pagehome .area_header .slider li:nth-child(3) label {
+      right: 45%;
+    }
+
+/* ------------------------------------------------------ */
+/* HEADER + 1000px */
+
+@media only screen and (min-width: 1000px) {
+
+#container_pagehome .area_header {
+  height: 42rem;
+}
+  #container_pagehome .area_header .slider {
+    height: 42rem;
+  }
+    #container_pagehome .area_header .slider img {
+      height: 42rem;
+    }
+
+}

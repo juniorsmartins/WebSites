@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário para o aprendizado do autor */
+/* Cliente: Instituto Mato-grossense de Tênis - IMT */
+/* Descrição: Entidade sem fins lucrativos de fomento do tênis em prol crianças e adolescentes */
+/* Protocolo de Produção: 0010108-2020 */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* MAIN */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container_projetos .area_main {
+  grid-area: conteudo;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: var(--tamanho-grid-template-columns);
+  grid-template-areas: 
+    ". projetos ."
+    ". projetos ."
+    ". projetos .";
+  background: var(--background-image-main);
+}
+  .area_main .main_projetos {
+    grid-area: projetos;
+    width: 100%;
+    height: auto;
+    margin: var(--margin-main-sections);
+    padding-bottom: var(--padding-bottom-main-sections);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "tenissocial" 
+    "topdez" 
+    "cttenis";
+  }
+    .area_main .main_projetos h2 {
+      text-align: center;
+      padding: var(--padding-main-titulo1);
+    }
+    .area_main .main_projetos img { 
+      width: 50rem;
+      margin: 1rem 2rem 1rem 0;
+      float: left;
+    }
+    .area_main .main_projetos .projetos_tenissocial {
+      grid-area: tenissocial;
+      width: 100%;
+      height: auto;
+      text-align: justify;
+      padding: var(--padding-main-projetos-articles);
+      background-color: var(--background-color-projetos-articles);
+    }
+    .area_main .main_projetos .projetos_topdez {
+      grid-area: topdez;
+      width: 100%;
+      height: auto;
+      text-align: justify;
+      padding: var(--padding-main-projetos-articles);
+      background-color: var(--background-color-projetos-articles);
+    }
+    .area_main .main_projetos .projetos_cttenis {
+      grid-area: cttenis;
+      width: 100%;
+      height: auto;
+      text-align: justify;
+      padding: var(--padding-main-projetos-articles);
+      background-color: var(--background-color-projetos-articles);
+    }
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* MAIN CELULAR */
+
+@media only screen and (max-width: 700px) {
+  :root {
+    font-size: 30%;
+  }
+
+.container_projetos .area_main {
+  grid-area: conteudo;
+  display: grid;
+  grid-template-columns: 2% 1fr 2%;
+  grid-template-areas: 
+    ". projetos ."
+    ". projetos ."
+    ". projetos .";
+}
+  .area_main .main_projetos {
+    grid-area: projetos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .area_main .main_projetos article { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .area_main .main_projetos img { 
+    margin: 0 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+
+
+}

@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Cliente: Instituto Mato-grossense de Tênis - IMT */
+/* Descrição: Entidade sem fins lucrativos de fomento do desporto Tênis */
+/* Objetivo: Trabalho voluntário para o fortalecimento da entidade */
+/* Protocolo: 012007-2020 */
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* GLOBAL */
+
+h1 {
+  font-size: 18px;
+}
+h2 {
+  font-size: 16px;
+}
+h3 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+a:link {
+  color: #FFFAFA; /* Personalizar link */
+  text-decoration: none; /* Alterar decoração do link - retirada do sublinhado padrão */
+}
+a:visited {
+  color: #FFFAFA; /* Personalizar link visitado */
+  text-decoration: none;
+}
+a:hover {
+  color: black; /* Personalizar link sob o mouse */
+  text-decoration: none;
+}
+a:active {
+  color: red; /* Personalizar link quando clicado */
+  text-decoration: none;
+}
+
+body {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 1400px;
+  padding: 0%;
+  margin: 0%;
+  color: #FFFAFA;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #79AEF2, #91C5F2); /* Gradiente para a direita entre cores A e B */
+}
+  .area-interface {
+    width: 90%;
+    height: 100%;
+    padding: 0%;
+    margin: 0% auto 0% auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.7); /* Cria sombra para a interface */
+  }
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* NAV */
+
+nav.area-menu {
+  display: block; /* Os elementos nesta área viram um bloco */
+  position: fixed; /* Menu fixado na tela */
+  top: 0%;
+  width: 90%; /* Define largura */
+  height: 3.6%; /* Define altura */
+  padding: 0.5% 0% 0% 0%; /* Define margem interna do elemento */
+  margin: 0% 0% 0% 0%; /* Define margem externa do elemento */
+  border-bottom: 0.1px solid #FFFAFA;
+  background-color: #366CD9;
+}
+  nav.area-menu h1 {
+    display: none; /* Faz desaparecer o H1 semântico do Menu */
+  }
+  nav.area-menu ul {
+    width: 100%; /* Define dimensão de largura da list */
+    height: 100%; /* Define dimensão de altura da lista */
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none; /* Remove marcador de lista */
+    text-transform: uppercase; /* Lista em maiúsculo */
+    text-align: center; /* Alinha texto ao centro */
+  }
+    nav.area-menu ul li {
+      width: 100%;
+      height: 100%;
+      padding: 0.5% 4% 0.6% 4%;
+      margin: 0%;
+      display: inline;
+      transition: background-color 1s; /* Faz o li:hover demorar 1 segundo */
+    }
+      nav.area-menu li:hover {
+        background-color: #91C5F2;
+      }
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* HEADER */
+
+header.area-cabecalho {
+  display: block;
+  width: 100%;
+  height: 355px;
+  padding: 0%;
+  margin: 0%;
+  background-color: #366CD9;
+  background: url("../_img/modelobanner.png") no-repeat 0px 0px;
+  background-size: 100% 100%; /* Define o tamanho da imagem de fundo */
+  background-blend-mode: color-dodge; /* Clareia os pixels e aumenta o contraste da imagem de fundo. Cria efeitos brilhosos */
+}
+  #logoimt {
+    float: left;
+    width: 55%;
+    height: auto;
+    padding: 0%;
+    margin: 3.6% 0% 0% 0%;
+  }
+  #icone {
+    float: right;
+    width: auto;
+    height: 75%;
+    padding: 0%;
+    margin: 4% 3% auto auto;
+  }
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* SECTION */
+
+section.area-section {
+  display: block;
+  float: left;
+  width: 75%;
+  height: 66%;
+  padding: 0%;
+  margin: 0%;
+  background-color: #366CD9;
+}
+  .subarea-section {
+    float: left;
+    width: 95%;
+    height: 95%;
+    padding: 0%;
+    margin: 2.5% auto auto 2.5%;
+    border: 0.1px solid white;
+  }
+  
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* ARTICLE */
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* ASIDE */
+
+aside.area-aside {
+  display: block;
+  float: right;
+  width: 25%;
+  height: 66%;
+  padding: 0%;
+  margin: 0%;
+  background-color: #79AEF2;
+}
+  .subarea-aside {
+    float: left;
+    width: 95%;
+    height: 95%;
+    padding: 0%;
+    margin: 7.2% auto auto 2.5%; 
+    border: 0.1px solid white;
+  }
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* FOOTER */
+
+footer.area-rodape {
+  display: block;
+  clear: both;  
+  float: left;
+  width: 100%;
+  height: 10%;
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+  background-color: #4A548C;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */

@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Cliente: Instituto Mato-grossense de Tênis - IMT */
+/* Descrição: Entidade sem fins lucrativos de fomento do desporto Tênis */
+/* Objetivo: Trabalho voluntário para o fortalecimento da entidade */
+/* Protocolo: 012007-2020 */
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* NAV */
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* HEADER */
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* SECTION */
+
+#section-article1-instituto {
+    float: left;
+    clear: left;
+    width: 35%;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+  }
+  #section-article1-instituto img {
+    width: 100%;
+  }
+  #section-article1-instituto figcaption {
+    background-color: #4A548C;
+    padding: 0%;
+    margin: 0%;
+  }
+
+#section-article2-instituto {
+  padding: 0%;
+  margin: 0%;
+  text-align: justify;
+}
+  #section-article2-instituto h1 {
+    text-align: center;
+  }
+
+#section-article3-instituto {
+  float: left;
+  clear: keft;
+  width: 32%;
+  height: auto;
+  padding: 0%;
+  margin: auto auto 0% 1%;
+}
+  #section-article3-instituto h3 {
+    text-align: center;
+  }
+
+#section-article4-instituto {
+  float: left;
+  width: 32%;
+  height: auto;
+  padding: 0%;
+  margin: auto auto 0% 1%;
+}
+  #section-article4-instituto h3 {
+    text-align: center;
+  }
+
+#section-article5-instituto {
+  float: right;
+  clear: right;
+  width: 32%;
+  height: auto;
+  padding: 0%;
+  margin: auto auto 0% auto;
+}
+  #section-article5-instituto h3 {
+    text-align: center;
+  }
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* ARTICLE */
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* ASIDE */
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* FOOTER */
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
