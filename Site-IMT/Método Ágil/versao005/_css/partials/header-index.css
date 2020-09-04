@@ -101,17 +101,19 @@
   .area_header .header_slider {
     grid-area: slider;
     width: 100%;
-    height: auto;
+    height: 64.5rem;
     margin: 0.5rem 0 10rem;
     border: 3.5rem solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
+    z-index: 5;
   }
     .area_header .header_slider img {
       width: 100%;
       height: 58rem;
+      z-index: 6;
     }
 
 
