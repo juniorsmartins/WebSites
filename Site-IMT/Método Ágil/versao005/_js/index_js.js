@@ -33,7 +33,7 @@ function inicia(){
   maxImg=imgs.length;
   sliderr=document.getElementById("dvslider");
   carregarImg(imgAtual);
-  tempo=setInterval(troca,1000);
+  tempo=setInterval(troca,3000);
 }
 
 function troca(){
