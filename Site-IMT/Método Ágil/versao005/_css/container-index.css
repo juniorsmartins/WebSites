@@ -25,6 +25,7 @@
   --background-color-sobre-articles: ;
   --background-color-projetos-articles: ;
   --tamanho-grid-template-columns: 10% 1fr 1fr 1fr 1fr 10%;
+  --tamanho-grid-template-columns2: 10% 80% 10%;
   --color-background: red;
   --color-nav-topbar: #4A548C;
   --color-nav-bottombar: #366CD9;
@@ -157,7 +158,7 @@ body {
 
 @media only screen and (min-width: 701px) {
   :root {
-    font-size: 35%;
+    font-size: 33%;
   }
 }
 
@@ -166,4 +167,3 @@ body {
     font-size: 45%;
   }
 }
-

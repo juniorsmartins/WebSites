@@ -23,7 +23,7 @@
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: var(--tamanho-grid-template-columns);
+  grid-template-columns: var(--tamanho-grid-template-columns2);
   grid-template-areas: 
     ". contatos ."
     ". contatos ."

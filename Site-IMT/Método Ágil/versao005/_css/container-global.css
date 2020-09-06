@@ -23,7 +23,8 @@
   --background-image-footer-dois: url(../../_imgs/_backs/img05.png) repeat;
   --background-color-sobre-articles: ;
   --background-color-projetos-articles: ;
-  --tamanho-grid-template-columns: 10% 1fr 10%;
+  --tamanho-grid-template-columns: 10% 1fr 1fr 1fr 1fr 10%;
+  --tamanho-grid-template-columns2: 10% 80% 10%;
   --color-background: red;
   --color-nav-topbar: #4A548C;
   --color-nav-bottombar: #366CD9;
@@ -109,7 +110,7 @@ body {
   background: var(--background-image-body);
 }
 
-.container_sobre {
+.container_global {
   width: 100%;
   height: auto;
   display: grid;
@@ -135,7 +136,7 @@ body {
     font-size: 30%;
   }
 
-  .container_sobre {
+  .container_global {
     width: 100%;
     display: grid;
     grid-template-areas: 
@@ -150,17 +151,5 @@ body {
       "rodape1"
       "rodape1"
       "rodape2";
-  }
-}
-
-@media only screen and (min-width: 701px) {
-  :root {
-    font-size: 33%;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  :root {
-    font-size: 45%;
   }
 }

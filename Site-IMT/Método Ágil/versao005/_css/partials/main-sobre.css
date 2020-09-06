@@ -18,12 +18,12 @@
   border: 0;
 }
 
-.container_sobre .area_main {
+.container_global .area_main {
   grid-area: conteudo;
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: var(--tamanho-grid-template-columns);
+  grid-template-columns: var(--tamanho-grid-template-columns2);
   grid-template-areas: 
     ". sobre ."
     ". sobre ."
@@ -100,7 +100,7 @@
     font-size: 30%;
   }
 
-.container_sobre .area_main {
+.container_global .area_main {
   grid-area: conteudo;
   display: grid;
   grid-template-columns: 2% 1fr 2%;

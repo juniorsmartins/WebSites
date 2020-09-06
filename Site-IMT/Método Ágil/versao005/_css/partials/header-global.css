@@ -18,17 +18,17 @@
   border: 0;
 }
 
-.container_index .area_header {
+  .area_header {
   grid-area: cabecalho;
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: var(--tamanho-grid-template-columns);
+  grid-template-columns: var(--tamanho-grid-template-columns2);
   grid-template-rows: auto;
   grid-template-areas: 
-    ". nomeimt nomeimt nomeimt nomeimt ."
-    ". barranav barranav barranav barranav ."
-    ". slider slider slider slider .";
+    ". nomeimt ."
+    ". barranav ."
+    ". slider .";
   background: var(--background-image-header);
 }
   .area_header .header_nome {
@@ -116,7 +116,7 @@
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 /* HEADER CELULAR */
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   :root {
     font-size: 30%;
   }
@@ -161,12 +161,19 @@
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 /* HEADER TABLET */
 
-@media only screen and (max-width: 800px) {
+@media screen and (min-width: 701px) and (max-width: 800px) {
   :root {
-    font-size: 30%;
+    font-size: 35%;
+  }
+  .area_header .header_menu ul li a {
+    margin: 0 0.5rem;
+    padding: 0 2rem;
   }
   .area_header .header_slider {
     grid-area: slider;
+    height: 46rem;
+    margin: 0.5rem 0 5rem;
+    border: 3rem solid white;
     background-size: 101% 101%;
     background-repeat: no-repeat;
   }
@@ -176,12 +183,19 @@
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 /* HEADER TABLET */
 
-@media only screen and (max-width: 1000px) {
+@media screen and (min-width: 801px) and (max-width: 1000px) {
   :root {
-    font-size: 35%;
+    font-size: 37%;
+  }
+  .area_header .header_menu ul li a {
+    margin: 0 1rem;
+    padding: 0 2rem;
   }
   .area_header .header_slider {
     grid-area: slider;
+    height: 46rem;
+    margin: 0.5rem 0 6rem;
+    border: 3rem solid white;
     background-size: 101% 101%;
     background-repeat: no-repeat;
   }
@@ -191,12 +205,19 @@
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 /* HEADER DESKTOP */
 
-@media only screen and (max-width: 1300px) {
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
   :root {
     font-size: 40%;
   }
+  .area_header .header_menu ul li a {
+    margin: 0 1.5rem;
+    padding: 0 2.5rem;
+  }
   .area_header .header_slider {
     grid-area: slider;
+    height: 54rem;
+    margin: 0.5rem 0 7rem;
+    border: 3.2rem solid white;
     background-size: 101% 101%;
     background-repeat: no-repeat;
   }
@@ -206,12 +227,19 @@
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 /* HEADER DESKTOP II */
 
-@media only screen and (min-width: 1301px) {
+@media screen and (min-width: 1301px) {
   :root {
-    font-size: 45%;
+    font-size: 44%;
+  }
+  .area_header .header_menu ul li a {
+    margin: 0 3rem;
+    padding: 0 3rem;
   }
   .area_header .header_slider {
     grid-area: slider;
+    height: 58rem;
+    margin: 0.5rem 0 8rem;
+    border: 3.5rem solid white;
     background-size: 101% 101%;
     background-repeat: no-repeat;
   }
