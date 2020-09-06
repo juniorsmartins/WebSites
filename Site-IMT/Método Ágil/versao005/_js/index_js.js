@@ -16,7 +16,7 @@ var tempo;
 
 function preCarregamento(){ // Função de pré-carregamento das imagens
   var nome_imagem=1;
-  for (var contador=1; contador<6; contador++){
+  for (var contador=1; contador<8; contador++){
     imgs[contador]=new Image();
     imgs[contador].src="_imgs/slider"+nome_imagem+".png";
     nome_imagem++;

@@ -237,7 +237,7 @@
   }
   .area_header .header_slider {
     grid-area: slider;
-    height: 58rem;
+    height: 68rem;
     margin: 0.5rem 0 8rem;
     border: 3.5rem solid white;
     background-size: 101% 101%;
