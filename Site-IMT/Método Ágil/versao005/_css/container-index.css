@@ -131,6 +131,10 @@ body {
 }
 
 
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* Responsivo e Adaptativo */
+
 @media only screen and (max-width: 700px) {
   :root {
     font-size: 30%;
@@ -152,8 +156,6 @@ body {
       "rodape1"
       "rodape2";
   }
-
-
 }
 
 @media only screen and (min-width: 701px) {

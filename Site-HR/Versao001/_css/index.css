@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário */
+/* Cliente: Harrison Ribeiro - HR */
+/* Descrição: Político - candidato a cargo eletivo */
+/* Protocolo de Produção: 0020309-2020 */
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+* { /* Define as características básicas de todos os elementos */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: '';
+  src: url(...);
+}
+
+:root {
+  --background-color-cor1: #2C51BF;
+  --background-color-cor2: #389BF2;
+  --background-color-cor3: #65A603;
+  --background-color-cor4: #fffafa;
+  --color-texto-cor1: #fffafa;
+  --color-texto-cor2: #000000;
+  --font-size-titulo: 5rem;
+  --font-size-subtitulo: 3rem;
+  --font-size-texto: 2.4rem;
+  --margin-boxes: 0 4rem;
+  --padding-boxes: 1.3rem 4rem;
+  --padding-itens: 0 4rem;
+
+  --background-image-body: url(../_imgs/_backs/back01.png) repeat;
+  --background-image-header: url(../../_imgs/_backs/img03.png) repeat;
+  --background-image-header-nav: url(../../_imgs/_backs/img11.jpg) repeat;
+  --background-image-main: url(../../_imgs/_backs/img08.jpg) repeat;
+  --background-image-footer: url(../../_imgs/_backs/img01.png) repeat;
+  --background-color-sobre-articles: ;
+  --tamanho-grid-columns-container: 5% 90% 5%;
+  --tamanho-grid-columns-header: 20% 60% 20%;
+  --color-titulos1: #FFFAFA;
+  --color-titulos2: #000000;
+  --color-subtitulo1: #FFFAFA;
+  --color-subtitulo2: #000000;
+  --color-texto1: #FFFAFA;
+  --color-texto2: #000000;
+  --color-lista: #366CD9;
+  --color-lista-itens: #4A548C;
+  --color-lista-itens-link: #FFFAFA;
+  --color-lista-itens-visited: #91C5F2;
+  --color-lista-itens-hover: #000000;
+  --color-lista-itens-active: #4A548C;
+  --color-lista-background-hover: #91C5F2;
+  --color-button-slider: #FFFAFA;
+  --margin-main-sections: 2rem 0;
+  --margin-main-patronos-imgs: 1rem 1rem;
+  --padding-main-titulo1: 1rem 2rem 3rem;
+  --padding-main-titulo2: 2rem 2rem;
+  --padding-main-sobre-articles: 1rem 2rem;
+  --padding-main-projetos-articles: 1rem 2rem;
+  --padding-main-contatos-articles: 1rem 2rem;
+  --padding-main-patronos: 1rem 2rem;
+  --padding-bottom-main-sections: 3rem;
+  --border-bottom-main-sections: 0.1rem solid #a7a4a4;
+}
+
+h1 {
+  font-size: var(--font-size-titulo);
+}
+
+h2 {
+  font-size: var(--font-size-subtitulo);
+}
+
+h3, h4, h5, h6, a {
+  font-size: var(--font-size-texto);
+}
+
+p {
+  font-size: var(--font-size-texto);
+}
+
+#container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: var(--tamanho-grid-columns-container);
+  grid-template-areas: 
+    "cabeca cabeca cabeca"
+    "conteudo conteudo conteudo"
+    "rodape rodape rodape";
+  background-color: yellow;
+}
+
+header {
+  grid-area: cabeca;
+  width: 100%;
+  height: 32rem;
+  display: grid;
+  grid-template-columns: var(--tamanho-grid-columns-header);
+  grid-template-areas: 
+    "logo nomehr foto"
+    "logo sloganhr foto"
+    "logo registrohr foto";
+  color: var(--color-texto-cor1);
+  background-color: var(--background-color-cor1);
+}
+  header #logo_dem {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: red;
+  }
+  header #nome {
+    grid-area: nomehr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: green;
+  }
+  header #slogan {
+    grid-area: sloganhr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: rgb(51, 51, 6);
+  }
+  header #registro {
+    grid-area: registrohr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: gray;
+  }
+  header #foto_rosto {
+    grid-area: foto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: brown;
+  }
+
+main {
+  grid-area: conteudo;
+  width: 100%;
+  height: auto;
+}
+  main section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: var(--padding-boxes);
+    color: var(--color-texto-cor2);
+    background-color: var(--background-color-cor4);
+  }
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* Footer */
+
+footer {
+  grid-area: rodape;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  footer #rodape1 {
+    width: 100%;
+    height: 25rem;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: var(--padding-boxes);
+    font-size:var(--font-size-texto);
+    color: var(--color-texto-cor1);
+    background-color: var(--background-color-cor2);
+  }
+    #rodape1 #prova_valor {
+      padding: var(--padding-itens);
+    }
+    #rodape1 #redes_sociais {
+      padding: var(--padding-itens);
+    }
+    #rodape1 #receba_informativo {
+      padding: var(--padding-itens);
+    }
+
+  footer #rodape2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: var(--padding-boxes);   
+    font-size:var(--font-size-texto);
+    color: var(--color-texto-cor1);
+    background-color: var(--background-color-cor3);
+  }
+    footer #rodape2 a {
+      color: var(--color-texto-cor1);
+    }
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* Responsivo e Adaptativo */
+
+@media screen and (max-width: 700px) {
+  :root {
+    font-size: 30%;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 830px) {
+  :root {
+    font-size: 34%;
+  }
+}
+
+@media screen and (min-width: 831px) and (max-width: 1000px) {
+  :root {
+    font-size: 38%;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+  :root {
+    font-size: 42%;
+  }
+}
+
+@media screen and (min-width: 1301px) {
+  :root {
+    font-size: 46%;
+  }
+}
