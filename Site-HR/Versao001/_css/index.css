@@ -23,13 +23,15 @@
 }
 
 :root {
+  --background-image-header: url("../_img/banner1.png");
+  --background-image-footer: url("../_img/fundo1.png");
   --background-color-cor1: #2C51BF;
   --background-color-cor2: #389BF2;
   --background-color-cor3: #65A603;
   --background-color-cor4: #fffafa;
   --color-texto-cor1: #fffafa;
   --color-texto-cor2: #000000;
-  --font-size-titulo: 5rem;
+  --font-size-titulo: 10rem;
   --font-size-subtitulo: 3rem;
   --font-size-texto: 2.4rem;
   --margin-boxes: 0 4rem;
@@ -37,10 +39,8 @@
   --padding-itens: 0 4rem;
 
   --background-image-body: url(../_imgs/_backs/back01.png) repeat;
-  --background-image-header: url(../../_imgs/_backs/img03.png) repeat;
   --background-image-header-nav: url(../../_imgs/_backs/img11.jpg) repeat;
   --background-image-main: url(../../_imgs/_backs/img08.jpg) repeat;
-  --background-image-footer: url(../../_imgs/_backs/img01.png) repeat;
   --background-color-sobre-articles: ;
   --tamanho-grid-columns-container: 5% 90% 5%;
   --tamanho-grid-columns-header: 20% 60% 20%;
@@ -95,7 +95,6 @@ p {
     "cabeca cabeca cabeca"
     "conteudo conteudo conteudo"
     "rodape rodape rodape";
-  background-color: yellow;
 }
 
 header {
@@ -108,10 +107,11 @@ header {
   grid-template-columns: var(--tamanho-grid-columns-header);
   grid-template-areas: 
     "logo nomehr foto"
-    "logo sloganhr foto"
-    "logo registrohr foto";
+    "logo nomehr foto"
+    "logo nomehr foto";
   color: var(--color-texto-cor1);
-  background-color: var(--background-color-cor1);
+  background-color: var(--background-color-cor3);
+  background-image: var(--background-image-header);
 }
   header #logo_dem {
     grid-area: logo;
@@ -141,24 +141,11 @@ header {
   header #nome {
     grid-area: nomehr;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-background-color: green;
   }
-  header #slogan {
-    grid-area: sloganhr;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-background-color: rgb(51, 51, 6);
-  }
-  header #registro {
-    grid-area: registrohr;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-background-color: gray;
-  }
+
   header #foto_rosto {
     grid-area: foto;
     width: 100%;
@@ -247,7 +234,9 @@ footer {
     padding: var(--padding-boxes);   
     font-size:var(--font-size-texto);
     color: var(--color-texto-cor1);
-    background-color: var(--background-color-cor3);
+    background-image: var(--background-image-footer);
+    background-repeat: repeat;
+/*    background-color: var(--background-color-cor3); */
   }
     footer #rodape2 a {
       color: var(--color-texto-cor1);
