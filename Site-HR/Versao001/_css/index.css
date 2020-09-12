@@ -101,7 +101,9 @@ p {
 header {
   grid-area: cabeca;
   width: 100%;
-  height: 32rem;
+  height: 28rem;
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: var(--tamanho-grid-columns-header);
   grid-template-areas: 
@@ -113,11 +115,29 @@ header {
 }
   header #logo_dem {
     grid-area: logo;
+    width: 100%;
+    height: 28rem;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-background-color: red;
+    align-content: center;
+    text-align: center;
   }
+    header #logo_dem #l_dem img
+    {
+      width: 34rem;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+
   header #nome {
     grid-area: nomehr;
     display: flex;
@@ -141,11 +161,20 @@ background-color: gray;
   }
   header #foto_rosto {
     grid-area: foto;
+    width: 100%;
+    height: 28rem;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-background-color: brown;
   }
+    header #foto_rosto #f_rosto img 
+    {
+      width: 28rem;
+      height: auto;
+      padding: 3rem 0 0 0;
+    }
 
 main {
   grid-area: conteudo;
