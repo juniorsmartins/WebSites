@@ -25,6 +25,8 @@
 :root {
   --background-image-header: url("../_img/banner1.png");
   --background-image-footer: url("../_img/fundo1.png");
+  --background-image-footer2: url("../_img/fundo2.png");
+  --background-image-section: url("../_img/fundo3.png");
   --background-color-cor1: #2C51BF;
   --background-color-cor2: #389BF2;
   --background-color-cor3: #65A603;
@@ -43,6 +45,7 @@
   --background-image-main: url(../../_imgs/_backs/img08.jpg) repeat;
   --background-color-sobre-articles: ;
   --tamanho-grid-columns-container: 5% 90% 5%;
+  --tamanho-grid-columns-main: 8% 84% 8%;
   --tamanho-grid-columns-header: 20% 60% 20%;
   --color-titulos1: #FFFAFA;
   --color-titulos2: #000000;
@@ -110,6 +113,7 @@ header {
     "logo nomehr foto"
     "logo nomehr foto";
   color: var(--color-texto-cor1);
+  box-shadow: 9px 3px 3px #0a3838;
   background-color: var(--background-color-cor3);
   background-image: var(--background-image-header);
 }
@@ -138,15 +142,18 @@ header {
       text-align: center;
     }
 
-  header #nome {
+  header #nome 
+  {
     grid-area: nomehr;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-shadow: 0.1em 0.1em 0.2em black;
   }
 
-  header #foto_rosto {
+  header #foto_rosto 
+  {
     grid-area: foto;
     width: 100%;
     height: 28rem;
@@ -156,17 +163,35 @@ header {
     justify-content: center;
     align-items: center;
   }
+    header #foto_rosto #f_rosto 
+    {
+      width: 100%;
+      height: 28rem;
+      overflow: hidden;
+    }
     header #foto_rosto #f_rosto img 
     {
-      width: 28rem;
+      width: 24rem;
       height: auto;
-      padding: 3rem 0 0 0;
+      margin: 2rem 0 0 0;
+      padding: 0;
     }
 
-main {
+main 
+{
   grid-area: conteudo;
   width: 100%;
   height: auto;
+  margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: var(--tamanho-grid-columns-main);
+  grid-template-areas: 
+  ". secao1 ."
+  ". secao2 ."
+  ". secao3 ."
+  ". secao4 ."
+  ". secao5 ."
+  ". secao6 .";
 }
   main section {
     width: 100%;
@@ -181,6 +206,66 @@ main {
     padding: var(--padding-boxes);
     color: var(--color-texto-cor2);
     background-color: var(--background-color-cor4);
+  }
+  main #secao1 
+  {
+    grid-area: secao1;
+    width: 100%;
+    height: 20rem;
+    margin: 1rem 0;
+    background-image: var(--background-image-section);
+    background-repeat: repeat;
+    box-shadow: 9px 3px 3px #0a3838;
+  }
+  main #secao2 
+  {
+    grid-area: secao2;
+    width: 100%;
+    height: 20rem;
+    margin: 1rem 0;
+    background-image: var(--background-image-section);
+    background-repeat: repeat;
+    box-shadow: 9px 3px 3px #0a3838;
+  }
+  main #secao3 
+  {
+    grid-area: secao3;
+    width: 100%;
+    height: 20rem;
+    margin: 1rem 0;
+    background-image: var(--background-image-section);
+    background-repeat: repeat;
+    box-shadow: 9px 3px 3px #0a3838;
+  }
+  main #secao4 
+  {
+    grid-area: secao4;
+    width: 100%;
+    height: 20rem;
+    margin: 1rem 0;
+    background-image: var(--background-image-section);
+    background-repeat: repeat;
+    box-shadow: 9px 3px 3px #0a3838;
+  }
+  main #secao5 
+  {
+    grid-area: secao5;
+    width: 100%;
+    height: 20rem;
+    margin: 1rem 0;
+    background-image: var(--background-image-section);
+    background-repeat: repeat;
+    box-shadow: 9px 3px 3px #0a3838;
+  }
+  main #secao6
+  {
+    grid-area: secao6;
+    width: 100%;
+    height: 20rem;
+    margin: 1rem 0;
+    background-image: var(--background-image-section);
+    background-repeat: repeat;
+    box-shadow: 9px 3px 3px #0a3838;
   }
 
 
@@ -209,7 +294,8 @@ footer {
     padding: var(--padding-boxes);
     font-size:var(--font-size-texto);
     color: var(--color-texto-cor1);
-    background-color: var(--background-color-cor2);
+    background-image: var(--background-image-footer2);
+    background-repeat: repeat;
   }
     #rodape1 #prova_valor {
       padding: var(--padding-itens);
@@ -236,7 +322,6 @@ footer {
     color: var(--color-texto-cor1);
     background-image: var(--background-image-footer);
     background-repeat: repeat;
-/*    background-color: var(--background-color-cor3); */
   }
     footer #rodape2 a {
       color: var(--color-texto-cor1);
