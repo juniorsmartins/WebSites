@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário para o aprendizado do autor */
+/* Cliente: Federação Mato-grossense de Tênis - FMTT */
+/* Descrição: Entidade sem fins lucrativos de fomento do tênis */
+/* Protocolo de Produção: 3001510-2020 */
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* FOOTER GLOBAL */
+
+
+.container .footer_Padrao {
+  grid-area: boot;
+  width: 100%;
+  height: 100%;
+  background: var(--background-color-footer);
+}
