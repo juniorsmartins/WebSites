@@ -6,54 +6,43 @@
 /* Protocolo de Produção: 3001510-2020 */
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
-/* HEADER GLOBAL */
+/* HEADER GERAL */
 
-
-header {
-  grid-area: cabeca;
-  display: grid;
-  grid-template-areas: 
-    "cabeca_Identificacao"
-    "cabeca_Slider";
-  background: var(--background-color-header);
+.identificacao {
+  grid-area: identidade;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  color: var(--color-texto-header);
 }
-  .container_Cabeca {
-    grid-area: cabeca_Identificacao;
-    display: grid;
-    grid-template-areas: 
-      "logo nome opcoes";
-    grid-template-columns: var(--tam-grid-columns-header);
-    text-align: center;
-    align-items: center;
-    color: var(--color-texto-header);
-  }
     .logo_Tipo {
-      grid-area: logo;
+      order: 1;
+      width: 33.25%;
+      text-align: center;
     }
       .logo_Tipo img {width: 15%;}
     .nome_Entidade {
-      grid-area: nome;
+      order: 2;
+      width: 33.5%;
+      text-align: center;
     }
-    .menu_Principal {
-      grid-area: opcoes;
+    .redes_Sociais {
+      order: 3;
+      width: 33.25%;
+      text-align: center;
     }
-      .menu_Principal ul {
-      }
-        .menu_Principal ul li {
-          float: left;
-          width: 25%;
-          display: inline-block;
-          text-align: center;
-          font-size: 1.3em;
-          background-color: var(--background-color-menu);
-        }
-          .menu_Principal ul li:hover {
-            background-color: var(--background-color-menu-hover);
-            color: var(--color-texto-menu-hover);
-          }
 
-  .container_Slider {
-    grid-area: cabeca_Slider;
-    text-align: center;
-    align-items: center;
-  }
+
+.rolagem {
+  grid-area: slider;
+  text-align: center;
+  align-items: center;
+  background-color: red;
+}
+

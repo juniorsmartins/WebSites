@@ -6,10 +6,6 @@
 /* Protocolo de Produção: 3001510-2020 */
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
-/* FOOTER GLOBAL */
+/* FOOTER GERAL */
 
 
-footer {
-  grid-area: rodape;
-  background: var(--background-color-footer);
-}
