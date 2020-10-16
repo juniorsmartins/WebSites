@@ -8,31 +8,27 @@
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 /* MAIN PRINCIPAL */
 
+/* cores: #F2CD5E Amarelo - #0460D9 Azul - #2585D9 Azul claro - #F23005 vermelho - #41BF49 verde */
+
 :root {
-  --background-color-header: #6850BF;
-  --background-color-body: #F2CD5E;
-  --background-color-footer: #5D4AD9;
+  --background-color-body: #FAFAFA;
+  --background-color-header: #0460D9;
+  --background-color-main: #F2CD5E;
+  --background-color-footer: #2585D9;
   --background-image-body: url(../_imgs/_backs/back01.png) repeat;
-  --background-color-projetos-articles: ;
-  --tamanho-grid-columns: 1fr 18fr 1fr;
-  --tamanho-grid-rows: 2fr 6fr 2fr;
+  --tamanho-grid-columns: 5% 90% 5%;
+  --tamanho-grid-rows: 15% 75% 10%;
   --color-background: ;
   --color-nav-topbar: ;
-  --color-nav-bottombar: ;
-  --color-header: ;
+  --color-texto-header: #FAFAFA;
   --color-main: ;
   --color-publicidade: ;
   --color-main-conteudo1: ;
-  --color-main-conteudo2: ;
   --color-main-conteudo3: ;
-  --color-main-conteudo4: ;
   --color-footer: ;
   --color-titulos1: ;
-  --color-titulos2: ;
   --color-subtitulo1: ;
-  --color-subtitulo2: ;
   --color-texto1: ;
-  --color-texto2: ;
   --color-lista: ;
   --color-lista-itens: ;
   --color-lista-itens-link: ;
@@ -44,13 +40,13 @@
   --margin-main-sections: ;
   --margin-main-patronos-imgs: ;
   --padding-main-titulo1: ;
-  --padding-main-titulo2: ;
   --padding-main-sobre-articles: ;
   --padding-main-projetos-articles: ;
-  --padding-main-contatos-articles: ;
   --padding-main-patronos: ;
   --padding-bottom-main-sections: ;
   --border-bottom-main-sections: 0.1rem solid #a7a4a4;
+
+  font-size: 16px;
 }
 
 * {
@@ -62,30 +58,28 @@
   border: 0;
 }
 
+html body {
+  width: 100%;
+  height: 500px;
+}
+
 .container {
   display: grid;
-  grid-template-columns: var(--tamanho-grid-columns);
-  grid-template-rows: var(--tamanho-grid-rows);
-  grid-row-gap: 0.5rem;
   grid-template-areas: 
     "cabeca cabeca cabeca"
     "conteudo conteudo conteudo"
     "rodape rodape rodape";
-}
-
-header {
-  grid-area: cabeca;
-  color: #FAFAFA;
-  background: var(--background-color-header);
+  grid-template-columns: var(--tamanho-grid-columns);
+  grid-template-rows: var(--tamanho-grid-rows);
+  grid-row-gap: 0.2%;
+  background: var(--background-color-body);
 }
 
 main {
   grid-area: conteudo;
-  background: var(--background-color-body);
+  text-align: center;
+  background: var(--background-color-main);
 }
 
-footer {
-  grid-area: rodape;
-  background: var(--background-color-footer);
-}
+
 

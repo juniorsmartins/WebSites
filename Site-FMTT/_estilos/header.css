@@ -9,3 +9,37 @@
 /* HEADER GLOBAL */
 
 
+header {
+  grid-area: cabeca;
+  display: grid;
+  grid-template-areas: 
+    "cont_cabeca"
+    "cont_slider";
+  background: var(--background-color-header);
+}
+  .container_Cabeca {
+    grid-area: cont_cabeca;
+    display: grid;
+    grid-template-areas: 
+      "logo nome opcoes";
+    grid-template-columns: 33em 33em 33em;
+    text-align: center;
+    align-items: center;
+    color: var(--color-texto-header);
+  }
+    .logo_Tipo {
+      grid-area: logo;
+    }
+      .logo_Tipo img {width: 10%;}
+    .nome_Entidade {
+      grid-area: nome;
+    }
+    .menu_Principal {
+      grid-area: opcoes;
+    }
+
+  .container_Slider {
+    grid-area: cont_slider;
+    text-align: center;
+    align-items: center;
+  }
