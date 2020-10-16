@@ -13,16 +13,16 @@ header {
   grid-area: cabeca;
   display: grid;
   grid-template-areas: 
-    "cont_cabeca"
-    "cont_slider";
+    "cabeca_Identificacao"
+    "cabeca_Slider";
   background: var(--background-color-header);
 }
   .container_Cabeca {
-    grid-area: cont_cabeca;
+    grid-area: cabeca_Identificacao;
     display: grid;
     grid-template-areas: 
       "logo nome opcoes";
-    grid-template-columns: 33em 33em 33em;
+    grid-template-columns: var(--tam-grid-columns-header);
     text-align: center;
     align-items: center;
     color: var(--color-texto-header);
@@ -30,16 +30,30 @@ header {
     .logo_Tipo {
       grid-area: logo;
     }
-      .logo_Tipo img {width: 10%;}
+      .logo_Tipo img {width: 15%;}
     .nome_Entidade {
       grid-area: nome;
     }
     .menu_Principal {
       grid-area: opcoes;
     }
+      .menu_Principal ul {
+      }
+        .menu_Principal ul li {
+          float: left;
+          width: 25%;
+          display: inline-block;
+          text-align: center;
+          font-size: 1.3em;
+          background-color: var(--background-color-menu);
+        }
+          .menu_Principal ul li:hover {
+            background-color: var(--background-color-menu-hover);
+            color: var(--color-texto-menu-hover);
+          }
 
   .container_Slider {
-    grid-area: cont_slider;
+    grid-area: cabeca_Slider;
     text-align: center;
     align-items: center;
   }

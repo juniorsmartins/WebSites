@@ -11,6 +11,5 @@
 
 footer {
   grid-area: rodape;
-  height: 100em;
   background: var(--background-color-footer);
 }

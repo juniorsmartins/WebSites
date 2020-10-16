@@ -6,18 +6,19 @@
 /* Protocolo de Produção: 3001510-2020 */
 
 /* ----------------------------------------------------------------------------------------------------------------------------- */
-/* MAIN PRINCIPAL */
-
-/* cores: #F2CD5E Amarelo - #0460D9 Azul - #2585D9 Azul claro - #F23005 vermelho - #41BF49 verde */
+/* MAIN PRINCIPAL  #265DA6 #30BF6E #0460D9 #F2CD5E #4192D9 */
 
 :root {
   --background-color-body: #FAFAFA;
-  --background-color-header: #0460D9;
+  --background-color-header: #265DA6;
+  --background-color-menu: #144673;
+  --background-color-menu-hover: #30BF6E;
   --background-color-main: #F2CD5E;
-  --background-color-footer: #2585D9;
+  --background-color-footer: #4192D9;
   --background-image-body: url(../_imgs/_backs/back01.png) repeat;
-  --tamanho-grid-columns: 5% 90% 5%;
-  --tamanho-grid-rows: 15% 75% 10%;
+  --tam-grid-columns-body: 2% 96% 2%; 
+  --tam-grid-columns-header: 33.25% 33.5% 33.25%;
+  --color-texto-menu-hover: #F2CD5E;
   --color-background: ;
   --color-nav-topbar: ;
   --color-texto-header: #FAFAFA;
@@ -59,17 +60,17 @@
 }
 
 html body {
-  width: 100%;
-  height: 500px;
+  width: 98.5vw;
+  height: 1200px;
 }
 
 .container {
   display: grid;
   grid-template-areas: 
-    "cabeca cabeca cabeca"
-    "conteudo conteudo conteudo"
-    "rodape rodape rodape";
-  grid-template-columns: var(--tamanho-grid-columns);
+    ". cabeca ."
+    ". conteudo ."
+    ". rodape .";
+  grid-template-columns: var(--tam-grid-columns-body);
   grid-template-rows: var(--tamanho-grid-rows);
   grid-row-gap: 0.2%;
   background: var(--background-color-body);
