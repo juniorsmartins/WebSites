@@ -35,8 +35,25 @@
     .redes_Sociais {
       order: 3;
       width: 33.25%;
-      text-align: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      align-self: center;
+      flex-grow: 0;
+      flex-shrink: 0; 
     }
+        .redes {
+          width: 10%;
+          display: flex;
+          transition: all 0.4s ease-out;
+        }
+          .redes:hover {cursor: pointer; transform: translateY(-10px); box-shadow: 4px 20px 16px 0px rgba(50, 50, 50, 0.45);}
+          .redes img {width: 100%;}
+          .redes#facebook {background-color: #3b5998;}
+          .redes#instagram {background-color: #3f729b;}
 
 
 .rolagem {
