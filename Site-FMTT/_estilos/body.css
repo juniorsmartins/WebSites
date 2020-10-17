@@ -41,7 +41,7 @@
   --color-button-slider: ;
   --margin-main-sections: ;
   --margin-main-patronos-imgs: ;
-  --padding-containers: 0.5rem 2rem;
+  --padding-containers: 1rem 2rem;
   --padding-main-sobre-articles: ;
   --padding-main-projetos-articles: ;
   --padding-main-patronos: ;
@@ -62,7 +62,7 @@
 
 html {
   width: 98.5vw;
-  height: 1200px;
+  height: auto;
 }
 
 body {

@@ -24,25 +24,18 @@
 .contato {
   order: 1;
   width: 33.25%;
-  background: red;
 }
-  .contato.infos1 {
-
-  }
+  .infos1 h2 {text-transform: uppercase;}
 
 .endereco {
   order: 2;
   width: 33.5%;
-  background: gray;
 }
-  .endereco.infos2 {
-
-  }
+  .infos2 h2 {text-transform: uppercase;}
 
 .pagina_Face {
   order: 3;
   width: 33.25%;
-  background: green;
 }
 
 
