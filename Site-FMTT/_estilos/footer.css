@@ -8,4 +8,41 @@
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 /* FOOTER GERAL */
 
+.footer_Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  flex-grow: 0;
+  flex-shrink: 0; 
+  color: #FAFAFA;
+}
+
+.contato {
+  order: 1;
+  width: 33.25%;
+  background: red;
+}
+  .contato.infos1 {
+
+  }
+
+.endereco {
+  order: 2;
+  width: 33.5%;
+  background: gray;
+}
+  .endereco.infos2 {
+
+  }
+
+.pagina_Face {
+  order: 3;
+  width: 33.25%;
+  background: green;
+}
+
 
