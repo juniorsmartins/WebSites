@@ -21,8 +21,18 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v8.0" nonce="FUSTlEVA"></script>
 
+    <style>
+        #moldura {
+          width: 100%;
+          height: auto;
+          background-color: #eeeeee;
+          transition: background-image 2s;
+        }
+    </style>
+
+
   </head>
-  <body>
+  <body onload="iniciaSlider()">
 
       <header>
 
@@ -42,8 +52,27 @@
         </div>
 
         <div class="rolagem">
-          <p>Slider</p>
+          <div id="moldura"></div>
+          <input type="button" value="Anterior"/>
+          <input type="button" value="Próximo"/>
         </div>
+
+<!--        <script type="text/javascript" src="main1.js"></script> 
+-->
+
+    <script language="javascript">
+      function iniciaSlider() {
+        max = 4;
+        min = 1;
+        carregaFoto("_imgs/foto1.png");
+      }
+      function carregaFoto(foto) {
+        document.getElementById("moldura").style.backgroundImage="URL("+foto+")";
+      }
+    </script>
+
+
+
 
       </header>
 

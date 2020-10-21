@@ -10,6 +10,7 @@
 
 .identificacao {
   grid-area: identidade;
+  padding: 1% 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -58,8 +59,15 @@
 
 .rolagem {
   grid-area: slider;
+  width: 100%;
+  height: 400px;
   text-align: center;
   align-items: center;
   background-color: red;
 }
-
+  #moldura {
+    width: 100%;
+    height: auto;
+    background-color: #eeeeee;
+    transition: background-image 2s;
+  }
