@@ -21,6 +21,7 @@
   flex-grow: 0;
   flex-shrink: 0;
   color: var(--color-texto-header);
+  background-color: var(--background-color-header2);
 }
     .logo_Tipo {
       order: 1;
@@ -62,9 +63,10 @@
   width: 1470px;
   height: 400px;
   text-align: center; 
-  transition: background-image 2s;
+  transition: background-image 3s;
 }
   #sliderr {
+    padding: 0px;
     width: 1470px;
     height: 400px;
   }
