@@ -74,6 +74,7 @@ body {
     "rodape";
   grid-template-columns: var(--tam-grid-columns-body);
   grid-row-gap: 0.2%;
+  font-family: "Open Sans", sans-serif;
   background: var(--background-color-body);
 }
 
