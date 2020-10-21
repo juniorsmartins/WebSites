@@ -1,12 +1,27 @@
-function iniciaSlider() {
-  max = 4;
-  min = 1;
-  carregaFoto("_imgs/foto1.png");
+satual = 1;
+smax = 4;
+stmp = 2000;
+
+function troca() {
+  document.getElementById("b1").style.visibility="hidden";
+  document.getElementById("b2").style.visibility="hidden";
+  document.getElementById("b3").style.visibility="hidden";
+  document.getElementById("b4").style.visibility="hidden";
+
+  document.getElementById("b"+satual).style.visibility="visible";
+  satual++;
+
+  if (satual > smax) {
+    satual = 1;
+  }
 }
 
-function carregaFoto(foto) {
-  document.getElementById("moldura").style.backgroundImage="URL("+foto+")";
+function slider() {
+  document.getElementById("b1").style.visibility="hidden";
+  document.getElementById("b2").style.visibility="hidden";
+  document.getElementById("b3").style.visibility="hidden";
+  document.getElementById("b4").style.visibility="visible";
+
+  sliderTimer=setInterval(troca,stmp);
 }
-
-
 

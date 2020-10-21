@@ -57,20 +57,37 @@
           .redes#instagram {background-color: #3f729b;}
 
 
-.rolagem {
+#banner {
   grid-area: slider;
-  width: 1472px;
-  height: 402px;
-  text-align: center;
-  align-items: center;
-  border: 1px solid white;
-  background-color: red;
+  width: 1470px;
+  height: 400px;
+  text-align: center; 
+  transition: background-image 2s;
 }
-  #banner {
-    width: 1472px;
-    height: 402px;
-    background-color: #eeeeee;
-    transition: background-image 2s;
+  #sliderr {
+    width: 1470px;
+    height: 400px;
   }
-    #banner img {width: 1470px; height: 400px;}
+    #sliderr img {width: 1470px; height: 400px;}
+
+    #b1 {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    #b2 {
+      position: relative;
+      top: -403.3px;
+      left: 0;
+    }
+    #b3 {
+      position: relative;
+      top: -807.3px;
+      left: 0;
+    }
+    #b4 {
+      position: relative;
+      top: -1211px;
+      left: 0;
+    }
 
