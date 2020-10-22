@@ -37,8 +37,9 @@
 }
 
 .menu a:hover {
-  background-color: var(--background-color-menu-hover);
   color: var(--color-texto-menu-hover);
+  background-color: var(--background-color-menu-hover);
+  transition: all 1s;
 }
 
 .menu ul ul {
@@ -48,6 +49,7 @@
 
 .menu ul li:hover ul {
   visibility: visible;
+  transition: all 1s;
 }
 
 .menu ul ul li {
