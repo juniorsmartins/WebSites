@@ -8,18 +8,31 @@
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 /* FOOTER GERAL */
 
-.footer_Container {
+.footer_Abas {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
   align-self: center;
-  flex-grow: 0;
-  flex-shrink: 0; 
+  flex-grow: 1;
+  flex-shrink: 1; 
   color: #FAFAFA;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contato {
   order: 1;

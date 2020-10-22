@@ -1,3 +1,6 @@
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* Slider Automático */
+
 var satual = 1;
 var smax = 4;
 var stmp = 3000;
@@ -27,6 +30,9 @@ function slider() {
 
 
 
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* Galeria com botões */
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -34,13 +40,11 @@ function muda_Foto(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-
   let i;
   let slides = document.getElementsByClassName("fotos_Galeria");
 
@@ -57,5 +61,5 @@ function showSlides(n) {
   }
 
   slides[slideIndex - 1].style.display = "block";
-
 }
+
