@@ -22,7 +22,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v8.0" nonce="FUSTlEVA"></script>
 
-    <script type="text/javascript" src="main1.js"></script>
+    
   </head>
 
   <body onload="slider()">
@@ -79,25 +79,69 @@
 
 
       <main>
-        <section class="main_Conteudo">
+        <div class="main_Conteudo">
 
           <h2>Galeria</h2>
 
-          <div class="galeria">
+          <section class="container_Galeria">
 
-            <div class="mySlides fade">
-              <div class="numbertext">01 / 05</div>
-              <div class="imgslide" src=""></div>
-              <div class="text">
-                <p>Wesley 'Piu' Nunes<br/> 
-                Campeão do Open de Tênis Dona do Lar na 1ª Classe Pro<br/>
-                Fotógrafo: Junior Martins</p>
-              </div>
+            <div class="fotos_Galeria">
+                <div class="numero_Fotos">01 / 05</div>
+                <img class="imgslide" src="_imgs/galeria1.png" alt="foto de tenista"/>
+                <div class="legenda">
+                  <h3>Wesley 'Piu' Nunes</h3>
+                  <p>Campeão do Open de Tênis Dona do Lar na 1ª Classe Pro<br/>
+                  Fotógrafo: Junior Martins</p>
+                </div>
             </div>
 
-          </div>
+            <div class="fotos_Galeria">
+                <div class="numero_Fotos">02 / 05</div>
+                <img class="imgslide" src="_imgs/galeria2.png" alt="foto de tenista"/>
+                <div class="legenda">
+                  <h3>Wesley 'Piu' Nunes</h3>
+                  <p>Campeão do Open de Tênis Dona do Lar na 1ª Classe Pro<br/>
+                  Fotógrafo: Junior Martins</p>
+                </div>
+            </div>
 
-        </section>
+            <div class="fotos_Galeria"> 
+                <div class="numero_Fotos">03 / 05</div>
+                <img class="imgslide" src="_imgs/galeria3.png" alt="foto de tenista"/>
+                <div class="legenda">
+                  <h3>Marlus Cristiano</h3>
+                  <p>Campeão do Open de Tênis Dona do Lar na 1ª Classe Acima de 34<br/>
+                  Fotógrafo: Junior Martins</p>
+                </div>
+            </div>
+
+            <div class="fotos_Galeria"> 
+                <div class="numero_Fotos">04 / 05</div>
+                <img class="imgslide" src="_imgs/galeria4.png" alt="foto de tenista"/>
+                <div class="legenda">
+                  <h3>Pedro Nunes</h3>
+                  <p>Vice-campeão do Open de Tênis Dona do Lar na 1ª Classe Acima de 34<br/>
+                  Fotógrafo: Junior Martins</p>
+                </div>
+            </div>
+
+            <div class="fotos_Galeria"> 
+                <div class="numero_Fotos">05 / 05</div>
+                <img class="imgslide" src="_imgs/galeria5.png" alt="foto de tenista"/>
+                <div class="legenda">
+                  <h3>Maralice Lopes</h3>
+                  <p>Campeã do Open de Tênis Dona do Lar na 1ª Classe Feminina<br/>
+                  Fotógrafo: Junior Martins</p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="muda_Foto(-1)">&#10094;</a>
+            <a class="next" onclick="muda_Foto(1)">&#10095;</a>
+          </section>
+
+          <script type="text/javascript" src="main1.js"></script>
+
+        </div>
       </main>
 
 

@@ -94,7 +94,6 @@ header {
 main {
   grid-area: conteudo;
   padding: var(--padding-containers);
-  text-align: center;
   background: var(--background-color-main);
 }
 
