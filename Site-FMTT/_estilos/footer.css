@@ -8,8 +8,37 @@
 /* ----------------------------------------------------------------------------------------------------------------------------- */
 /* FOOTER GERAL */
 
+div.abas nav a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 18%;
+  margin: 0;
+  padding: 0.5% 3%;
+  text-align: center;
+  color: var(--color-texto-link);
+  background-color: var(--color-back-link);
+} div.abas nav a:hover {
+    transition: 2s;
+    color: var(--color-texto-menu-hover);
+    background-color: var(--background-color-menu-hover);
+  }
 
+div.abas div {
+  display: none;
+  margin: 0;
+  padding: 1%;
+  text-align: center;
+  background-color: var(--background-color-header2);
+} div.abas div:target {
+    display: block;
+  }
 
+div.abas section {
+  width: 30%;
+  height: auto;
+  padding: 0.5%;
+}
 
 
 

@@ -45,6 +45,7 @@
   --margin-main-sections: ;
   --margin-main-patronos-imgs: ;
   --padding-containers: 1rem 2rem;
+  --padding-navs: 0 2rem;
   --padding-main-sobre-articles: ;
   --padding-main-projetos-articles: ;
   --padding-main-patronos: ;
@@ -99,15 +100,13 @@ main {
 
 nav {
   grid-area: navegador;
-  padding: var(--padding-containers);
-  text-align: center;
+  padding: var(--padding-navs);
   background: var(--background-color-nav);
 }
 
 footer {
   grid-area: rodape;
   padding: var(--padding-containers);
-  text-align: center;
   background: var(--background-color-footer);
 }
 
