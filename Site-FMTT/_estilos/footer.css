@@ -32,6 +32,7 @@ div.abas div {
   background-color: var(--background-color-header2);
 } div.abas div:target {
     display: block;
+    height: 540px;
   }
 
 div.abas section {
