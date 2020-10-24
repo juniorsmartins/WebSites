@@ -72,14 +72,18 @@ html {
 body {
   display: grid;
   grid-template-areas: 
+    "menuBurguer"
     "cabeca"
     "navegador"
     "conteudo"
     "rodape";
   grid-template-columns: var(--tam-grid-columns-body);
-  grid-row-gap: 0.2%;
   font-family: "Open Sans", sans-serif;
   background: var(--background-color-body);
+}
+
+article {
+  grid-area: menuBurguer;
 }
 
 header {

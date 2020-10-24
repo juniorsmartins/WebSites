@@ -10,6 +10,105 @@
 
 
 
+/* ---------------------- Início Menu Hamburguer */
+#menu_Hamburguer {
+  z-index: 2;
+}
+
+#menu_Bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #DC052D;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+
+}
+
+#bar2 {
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nave {
+  transition: 0.3s ease;
+  display: none;
+}
+  .nave ul {
+    padding: 0 22px;
+  }
+  .nave li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  .nave li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .nave li a:hover {
+    font-weight: bold;
+  }
+
+.menu_Bg, #menu_Hamburguer {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu_Bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #DC052D, #DC052D);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change { 
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotate(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+
+.change_Bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60px, -30px);
+}
+/* ---------------------- Fim Menu Hamburguer */
+
+
+
+
 .menu {
   width: 100%;
   height: auto;
