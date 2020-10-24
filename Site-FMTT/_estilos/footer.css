@@ -41,5 +41,19 @@ div.abas section {
   padding: 0.5%;
 }
 
+#botao_Excluir {
+  width: 150px;
+  height: 35px;
+  cursor: pointer;
+} #botao_Excluir:hover {
+    color: white;
+    background-color: black;
+    transition: 2s;
+  }
+
+
+
+
+
 
 

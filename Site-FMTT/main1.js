@@ -71,7 +71,15 @@ function menuOnClick() {
   document.getElementById("nave").classList.toggle("change");
   document.getElementById("menu_Bg").classList.toggle("change_Bg");
 }
-
-
-
 /* ---------------------- Fim Menu Hamburguer */
+
+
+
+
+
+/* ---------------------- Início botão excluir */
+function fun_Excluir() {
+  
+}
+
+/* ---------------------- Fim botão excluir */
