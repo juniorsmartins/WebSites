@@ -63,3 +63,15 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
+
+
+/* ---------------------- Início Menu Hamburguer */
+function menuOnClick() {
+  document.getElementById("menu_Bar").classList.toggle("change");
+  document.getElementById("nave").classList.toggle("change");
+  document.getElementById("menu_Bg").classList.toggle("change_Bg");
+}
+
+
+
+/* ---------------------- Fim Menu Hamburguer */

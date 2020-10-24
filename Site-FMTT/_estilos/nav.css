@@ -88,7 +88,7 @@
 }
 
 .change #bar1 {
-  transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotatez(-45deg);
 }
 
 .change #bar2 {
@@ -96,13 +96,13 @@
 }
 
 .change #bar3 {
-  transform: translateY(-6px) rotate(45deg);
+  transform: translateY(-6px) rotatez(45deg);
 }
 
 .change_Bg {
   width: 520px;
   height: 460px;
-  transform: translate(-60px, -30px);
+  transform: translate(-60%, -30%);
 }
 /* ---------------------- Fim Menu Hamburguer */
 
