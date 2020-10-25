@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário para o aprendizado do autor */
+/* Cliente: Federação Mato-grossense de Tênis - FMTT */
+/* Descrição: Entidade sem fins lucrativos de fomento do tênis */
+/* Protocolo de Produção: 3001510-2020 */
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* NAV GERAL */
+
+
+
+/* ---------------------- Início Menu Hamburguer */
+#menu_Hamburguer {
+  z-index: 2;
+}
+
+#menu_Bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #DC052D;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+
+}
+
+#bar2 {
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nave {
+  transition: 0.3s ease;
+  display: none;
+}
+  .nave ul {
+    padding: 0 22px;
+  }
+  .nave li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  .nave li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .nave li a:hover {
+    font-weight: bold;
+  }
+
+.menu_Bg, #menu_Hamburguer {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu_Bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #DC052D, #DC052D);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change { 
+  display: block;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotatez(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotatez(45deg);
+}
+
+.change_Bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%, -30%);
+}
+/* ---------------------- Fim Menu Hamburguer */
+
+
+
+
+.menu {
+  width: 100%;
+  height: auto;
+  font-family: 'Arial';
+}
+
+.menu ul {
+  list-style: none;
+  position: relative;
+}
+
+.menu ul li {
+  width: 25%;
+  float: left;
+}
+
+.menu a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2%;
+  color: var(--color-texto-link);
+  background-color: var(--color-back-link);
+}
+
+.menu a:hover {
+  color: var(--color-texto-menu-hover);
+  background-color: var(--background-color-menu-hover);
+  transition: all 1s;
+}
+
+.menu ul ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+.menu ul li:hover ul {
+  visibility: visible;
+  transition: all 1s;
+}
+
+.menu ul ul li {
+  float: none;
+  width: 300%;
+  margin-left: 100%;
+  border-bottom: solid 1px #f4f4f4;
+}
+
+
+

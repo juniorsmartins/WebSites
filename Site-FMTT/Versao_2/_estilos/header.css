@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário para o aprendizado do autor */
+/* Cliente: Federação Mato-grossense de Tênis - FMTT */
+/* Descrição: Entidade sem fins lucrativos de fomento do tênis */
+/* Protocolo de Produção: 3001510-2020 */
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* HEADER GERAL */
+
+.identificacao {
+  grid-area: identidade;
+  padding: 1% 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  color: var(--color-texto-header);
+  background-color: var(--background-color-header2);
+}
+    .logo_Tipo {
+      order: 1;
+      width: 33.25%;
+      text-align: center;
+    }
+      .logo_Tipo img {width: 15%;}
+    .nome_Entidade {
+      order: 2;
+      width: 33.5%;
+      text-align: center;
+    }
+    .redes_Sociais {
+      order: 3;
+      width: 33.25%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      align-self: center;
+      flex-grow: 0;
+      flex-shrink: 0; 
+    }
+        .redes {
+          width: 10%;
+          display: flex;
+          transition: all 0.4s ease-out;
+        }
+          .redes:hover {cursor: pointer; transform: translateY(-10px); box-shadow: 4px 20px 16px 0px rgba(50, 50, 50, 0.45);}
+          .redes img {width: 100%;}
+          .redes#facebook {background-color: #3b5998;}
+          .redes#instagram {background-color: #3f729b;}
+
+
+#banner {
+  grid-area: slider;
+  width: 1470px;
+  height: 400px;
+  text-align: center; 
+  transition: background-image 3s;
+}
+  #sliderr {
+    padding: 0px;
+    width: 1470px;
+    height: 400px;
+  }
+    #sliderr img {width: 1470px; height: 400px;}
+
+    #b1 {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    #b2 {
+      position: relative;
+      top: -403.3px;
+      left: 0;
+    }
+    #b3 {
+      position: relative;
+      top: -807.3px;
+      left: 0;
+    }
+    #b4 {
+      position: relative;
+      top: -1211px;
+      left: 0;
+    }
+
