@@ -1,6 +1,8 @@
 /* ----------------------------------------------------------------------------------------------------------------------------- */
-/* Slider Automático */
+/* JavaScript Geral */
 
+
+/* ---------------------- Início Slider Automático */
 var satual = 1;
 var smax = 4;
 var stmp = 3000;
@@ -27,12 +29,11 @@ function slider() {
 
   sliderTimer=setInterval(troca,stmp);
 }
+/* ---------------------- Fim Slider Automático */
 
 
 
-/* ----------------------------------------------------------------------------------------------------------------------------- */
-/* Galeria com botões */
-
+/* ---------------------- Início Galeria de Fotos */
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -62,6 +63,7 @@ function showSlides(n) {
 
   slides[slideIndex - 1].style.display = "block";
 }
+/* ---------------------- Fim Galeria de Fotos */
 
 
 
@@ -85,3 +87,4 @@ function fun_Voltar () {
       ( /(?:^|\s)mostrar(?!\S)/g , '' );
 }
 /* ---------------------- Fim Modal Pop-Up */
+
