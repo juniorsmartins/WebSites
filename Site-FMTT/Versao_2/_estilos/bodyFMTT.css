@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* Autor: Junior Martins - https://juniormartins.46graus.com/ */
+/* Objetivo: Trabalho voluntário para o aprendizado do autor */
+/* Cliente: Federação Mato-grossense de Tênis - FMTT */
+/* Descrição: Entidade sem fins lucrativos de fomento do tênis */
+/* Protocolo de Produção: 3001510-2020 */
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------- Início da Raíz */
+:root {
+  --background-color-body: #FAFAFA;
+  --background-color-header: #4192D9;
+  --background-color-header2: #265DA6;
+  --background-color-nav: #4192D9;
+  --background-color-menu: #144673;
+  --background-color-menu-hover: #30BF6E;
+  --background-color-main: #F2CD5E;
+  --background-color-footer: #4192D9;
+  --background-image-body: url(../_imgs/_backs/back01.png) repeat;
+  --background-image-footer1: url() repeat;
+  --background-image-footer2: url(../_imgs/_backs/back_1.png) repeat;
+  --tam-grid-columns-body: 33% 34% 33%;
+  --color-texto: #FAFAFA;
+  --color-texto-menu-hover: #F2CD5E;
+  --color-texto-link: #FAFAFA;
+  --color-back-link: #265DA6;
+  --color-texto-header: #FAFAFA;
+  --padding-containers: 0.5rem 4rem;
+  --padding-sub-containers: 0.5rem 0.2rem;
+  --padding-reset: 0;
+  --border-bottom-main-sections: 0.1rem solid #a7a4a4;
+
+  font-size: 16px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  width: 100vw;
+  height: auto;
+}
+
+body {
+  display: grid;
+  grid-template-areas: 
+    "cabeca_Header cabeca_Header cabeca_Header"
+    "cabeca_Header cabeca_Header cabeca_Header"
+    "cabeca_Header cabeca_Header cabeca_Header"
+    "conteudo_Main conteudo_Main conteudo_Main"
+    "rodape_Footer rodape_Footer rodape_Footer";
+  grid-template-columns: var(--tam-grid-columns-body);
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background-color-body);
+}
+/* ---------------------- Fim da Raíz */
+
+
+
+/* ---------------------- Início do Header */
+header {
+  grid-area: cabeca_Header;
+  display: grid;
+  grid-template-areas: 
+    "cabeca_Header1 cabeca_Header1 cabeca_Header1"
+    "cabeca_Header2 cabeca_Header2 cabeca_Header2"
+    "cabeca_Header3 cabeca_Header3 cabeca_Header3";
+  padding: var(--padding-containers);
+  background: var(--background-color-header);
+} section#area_Header_1 {
+    grid-area: cabeca_Header1;
+  }
+  section#area_Header_2 {
+    grid-area: cabeca_Header2;
+  }
+  section#area_Header_3 {
+    grid-area: cabeca_Header3;
+  }
+/* ---------------------- Fim do Header */
+
+
+
+/* ---------------------- Início do Main */
+main {
+  grid-area: conteudo_Main;
+  padding: var(--padding-containers);
+  background: var(--background-color-main);
+}
+/* ---------------------- Fim do Main */
+
+
+
+/* ---------------------- Início do Footer */
+footer {
+  grid-area: rodape_Footer;
+  display: grid;
+  grid-template-areas: 
+    "rodape_Footer1 rodape_Footer1 rodape_Footer1"
+    "rodape_Footer2 rodape_Footer2 rodape_Footer2";
+  padding: var(--padding-reset);
+  color: var(--color-texto);
+  text-align: center;
+  background: var(--background-color-footer);
+  border: 1px solid white;
+} section#area_Footer_1 {
+    grid-area: rodape_Footer1;
+    padding: var(--padding-sub-containers);
+    border: 1px solid white;
+  }
+  section#area_Footer_2 {
+    grid-area: rodape_Footer2;
+    padding: var(--padding-sub-containers);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background: var(--background-image-footer2);
+  } section#area_Footer_2 a {
+      color: var(--color-texto-link);
+    }
+/* ---------------------- Fim do Footer */

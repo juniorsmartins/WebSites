@@ -33,7 +33,6 @@
 
 #bar1 {
   transform: translateY(-4px);
-
 }
 
 #bar2 {
@@ -74,7 +73,7 @@
   width: 0;
   height: 0;
   margin: 30px 0 20px 20px;
-  background: radial-gradient(circle, #DC052D, #DC052D);
+  background: radial-gradient(circle, #F2CD5E, #F2CD5E);
   border-radius: 50%;
   transition: 0.3s ease;
 }
