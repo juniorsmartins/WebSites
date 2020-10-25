@@ -17,7 +17,8 @@
   --background-color-menu-hover: #30BF6E;
   --background-color-main: #F2CD5E;
   --background-color-footer: #4192D9;
-  --background-color-abas: #144673;
+  --background-color-abas: #265DA6;
+  --background-color-abas2: #144673;
   --background-color-abas-hover: #30BF6E;
   --background-image-body: url(../_imgs/_backs/back01.png) repeat;
   --background-image-footer1: url(../_imgs/_backs/back_2.png) repeat;
@@ -119,35 +120,37 @@ footer {
     grid-area: rodape_Footer1;
     padding: var(--padding-containers);
     background: var(--background-image-footer1);
-  } .area_Abas {
-      margin: 0;
-      padding: 0;
-      border: 0;
-    } .abas_Menu {
-        margin: 0;
-        border: 0;
-        padding: 1%;
-
-      } .abas_Menu a {
-          text-decoration: none;
-          margin: 0;
-          border: 1px solid #265DA6;
-          padding: 1% 2%;
-          color: var(--color-texto-link);
-          background: var(--background-color-abas);
-        } .abas_Menu a:hover {
-            transition: 1s;
-            color: var(--color-texto-abas-hover);
-            background: var(--background-color-abas-hover);
-          }
-          .abas_Menu a:active {
-            color: var(--color-texto-abas-hover);
-            background: var(--background-color-abas-hover);
-          }
-      .abas_Conteudo {
-        padding: 1% 2%;
-        background: var(--background-color-abas);
+  } .nav_Tabs {
+      position: relative;
+      width: auto;
+      height: 12rem;
+      background-color: var(--background-color-abas);
+    } .nav_Tabs ul {
+        list-style: none;
       }
+      .nav_Tabs li {
+        float: left;
+      }
+      .nav_Tabs label {
+        width: 11rem;
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid white;
+        padding: 1rem 2rem;
+        background: var(--background-color-abas2);
+      } .rd_Tabs:checked ~ label {
+          color: var(--color-texto-abas-hover);
+          background: var(--background-color-abas-hover);
+        } 
+        .rd_Tabs {
+          display: none;
+        }
+    .nav_Content {
+      width: 65%;
+      height: 25%;
+      background-color: red;
+    }
 
   /* ---------- Fim Divisão Footer 1 */
 
