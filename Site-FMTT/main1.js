@@ -77,9 +77,9 @@ function menuOnClick() {
 
 
 
-/* ---------------------- Início botão excluir */
+/* ---------------------- Início Modal Pop-Up */
 function fun_Excluir() {
-  
+  resultado = window.confirm('Confirma a exclusão?');
 }
 
-/* ---------------------- Fim botão excluir */
+/* ---------------------- Fim Modal Pop-Up */
