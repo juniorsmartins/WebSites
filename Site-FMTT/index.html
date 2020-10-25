@@ -211,13 +211,20 @@
           </div>
 
           <div id="aba4">
-            <div class="modal">
-              <input type="button" value="Excluir!" id="botao_Excluir" onclick="fun_Excluir()"/>
-            </div>
+            <input type="button" value="Excluir!" id="botao_Excluir" onclick="fun_Excluir()"/>
           </div>
         </div>
       </footer>
 
+      <div id="modal_Promocao" class="modal_Container">
+        <div class="modal">
+          <h3 class="sub_Titulo">Confirma excluir?</h3>
+          <form>
+            <input type="button" class="c_Button" value="Sim!" onclick="fun_Voltar()"/>
+            <input type="button" class="c_Button" value="Não" onclick="fun_Voltar()"/>
+          </form>
+        </div>
+      </div>
 
   </body>
 </html>
