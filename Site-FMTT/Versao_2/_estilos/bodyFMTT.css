@@ -17,8 +17,10 @@
   --background-color-menu-hover: #30BF6E;
   --background-color-main: #F2CD5E;
   --background-color-footer: #4192D9;
+  --background-color-abas: #144673;
+  --background-color-abas-checadas: #30BF6E;
   --background-image-body: url(../_imgs/_backs/back01.png) repeat;
-  --background-image-footer1: url() repeat;
+  --background-image-footer1: url(../_imgs/_backs/back_2.png) repeat;
   --background-image-footer2: url(../_imgs/_backs/back_1.png) repeat;
   --tam-grid-columns-body: 33% 34% 33%;
   --color-texto: #FAFAFA;
@@ -26,9 +28,11 @@
   --color-texto-link: #FAFAFA;
   --color-back-link: #265DA6;
   --color-texto-header: #FAFAFA;
+  --color-texto-abas-checadas: #F2CD5E;
+  --padding-reset: 0;
   --padding-containers: 0.5rem 4rem;
   --padding-sub-containers: 0.5rem 0.2rem;
-  --padding-reset: 0;
+  --padding-abas: 0.4% 2%;
   --border-bottom-main-sections: 0.1rem solid #a7a4a4;
 
   font-size: 16px;
@@ -104,19 +108,22 @@ footer {
   grid-template-areas: 
     "rodape_Footer1 rodape_Footer1 rodape_Footer1"
     "rodape_Footer2 rodape_Footer2 rodape_Footer2";
-  padding: var(--padding-reset);
   color: var(--color-texto);
-  text-align: center;
+  padding: var(--padding-reset);
   background: var(--background-color-footer);
-  border: 1px solid white;
-} section#area_Footer_1 {
+} 
+  /* ---------- Início Divisão Footer 1 */
+  section#area_Footer_1 {
     grid-area: rodape_Footer1;
     padding: var(--padding-sub-containers);
-    border: 1px solid white;
+    background: var(--background-image-footer1);
   }
+  
+  /* ---------- Fim Divisão Footer 1 */
+
+  /* ---------- Início Divisão Footer 2 */
   section#area_Footer_2 {
     grid-area: rodape_Footer2;
-    padding: var(--padding-sub-containers);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -126,8 +133,11 @@ footer {
     align-self: center;
     flex-grow: 1;
     flex-shrink: 1;
+    text-align: center;
+    padding: var(--padding-sub-containers);
     background: var(--background-image-footer2);
   } section#area_Footer_2 a {
       color: var(--color-texto-link);
     }
+  /* ---------- Fim Divisão Footer 2 */
 /* ---------------------- Fim do Footer */
