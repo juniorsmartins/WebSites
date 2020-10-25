@@ -18,7 +18,7 @@
   --background-color-main: #F2CD5E;
   --background-color-footer: #4192D9;
   --background-color-abas: #144673;
-  --background-color-abas-checadas: #30BF6E;
+  --background-color-abas-hover: #30BF6E;
   --background-image-body: url(../_imgs/_backs/back01.png) repeat;
   --background-image-footer1: url(../_imgs/_backs/back_2.png) repeat;
   --background-image-footer2: url(../_imgs/_backs/back_1.png) repeat;
@@ -28,11 +28,10 @@
   --color-texto-link: #FAFAFA;
   --color-back-link: #265DA6;
   --color-texto-header: #FAFAFA;
-  --color-texto-abas-checadas: #F2CD5E;
+  --color-texto-abas-hover: #F2CD5E;
   --padding-reset: 0;
   --padding-containers: 0.5rem 4rem;
   --padding-sub-containers: 0.5rem 0.2rem;
-  --padding-abas: 0.4% 2%;
   --border-bottom-main-sections: 0.1rem solid #a7a4a4;
 
   font-size: 16px;
@@ -111,14 +110,45 @@ footer {
   color: var(--color-texto);
   padding: var(--padding-reset);
   background: var(--background-color-footer);
-} 
+} .area_Footer {
+    padding: var(--padding-sub-containers);
+  }
+
   /* ---------- Início Divisão Footer 1 */
   section#area_Footer_1 {
     grid-area: rodape_Footer1;
-    padding: var(--padding-sub-containers);
+    padding: var(--padding-containers);
     background: var(--background-image-footer1);
-  }
-  
+  } .area_Abas {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    } .abas_Menu {
+        margin: 0;
+        border: 0;
+        padding: 1%;
+
+      } .abas_Menu a {
+          text-decoration: none;
+          margin: 0;
+          border: 1px solid #265DA6;
+          padding: 1% 2%;
+          color: var(--color-texto-link);
+          background: var(--background-color-abas);
+        } .abas_Menu a:hover {
+            transition: 1s;
+            color: var(--color-texto-abas-hover);
+            background: var(--background-color-abas-hover);
+          }
+          .abas_Menu a:active {
+            color: var(--color-texto-abas-hover);
+            background: var(--background-color-abas-hover);
+          }
+      .abas_Conteudo {
+        padding: 1% 2%;
+        background: var(--background-color-abas);
+      }
+
   /* ---------- Fim Divisão Footer 1 */
 
   /* ---------- Início Divisão Footer 2 */
@@ -134,7 +164,6 @@ footer {
     flex-grow: 1;
     flex-shrink: 1;
     text-align: center;
-    padding: var(--padding-sub-containers);
     background: var(--background-image-footer2);
   } section#area_Footer_2 a {
       color: var(--color-texto-link);
