@@ -22,7 +22,8 @@
   --background-color-abas-hover: #30BF6E;
   --background-image-body: url(../_imgs/_backs/back01.png) repeat;
   --background-image-footer1: url(../_imgs/_backs/back_2.png) repeat;
-  --background-image-footer2: url(../_imgs/_backs/back_1.png) repeat;
+  --background-image-footer1: url() repeat;
+  --background-image-back2: url(../_imgs/_backs/back_2.png) repeat;
   --tam-grid-columns-body: 33% 34% 33%;
   --color-texto: #FAFAFA;
   --color-texto-menu-hover: #F2CD5E;
@@ -76,16 +77,48 @@ header {
     "cabeca_Header1 cabeca_Header1 cabeca_Header1"
     "cabeca_Header2 cabeca_Header2 cabeca_Header2"
     "cabeca_Header3 cabeca_Header3 cabeca_Header3";
-  padding: var(--padding-containers);
+  text-align: center;
   background: var(--background-color-header);
 } section#area_Header_1 {
     grid-area: cabeca_Header1;
-  }
+    display: grid;
+    grid-template-areas: 
+      "cabeca_Header1_1 cabeca_Header1_2 cabeca_Header1_3";
+    grid-template-columns: var(--tam-grid-columns-body);
+    background: var(--background-image-back2);
+  } #Header_1_Esq {
+      grid-area: cabeca_Header1_1;
+      border: 1px solid red;
+    } 
+    #Header_1_Cen {
+      grid-area: cabeca_Header1_2;
+      border: 1px solid green;
+    }
+    #Header_1_Dir {
+      grid-area: cabeca_Header1_3;
+      border: 1px solid violet;
+    }
   section#area_Header_2 {
     grid-area: cabeca_Header2;
-  }
+    display: grid;
+    grid-template-areas: 
+      "cabeca_Header2_1 cabeca_Header2_2 cabeca_Header2_3";
+    grid-template-columns: var(--tam-grid-columns-body);
+  } #Header_2_Esq {
+      grid-area: cabeca_Header2_1;
+      border: 1px solid red;
+    } #Header_2_Esq img {width: 20%; padding: 0.4rem;}
+    #Header_2_Cen {
+      grid-area: cabeca_Header2_2;
+      border: 1px solid green;
+    } #Header_2_Cen h1 {font-size: 2rem; padding: 0.4rem; color: white;}
+    #Header_2_Dir {
+      grid-area: cabeca_Header2_3;
+      border: 1px solid violet;
+    }
   section#area_Header_3 {
     grid-area: cabeca_Header3;
+    border: 1px solid white;
   }
 /* ---------------------- Fim do Header */
 
@@ -119,10 +152,10 @@ footer {
   section#area_Footer_1 {
     grid-area: rodape_Footer1;
     padding: var(--padding-containers);
-    background: var(--background-image-footer1);
+    background: var();
   } .nav_Tabs {
       position: relative;
-      width: auto;
+      width: 44rem;
       height: 12rem;
       background-color: var(--background-color-abas);
     } .nav_Tabs ul {
@@ -136,22 +169,82 @@ footer {
         display: block;
         cursor: pointer;
         text-align: center;
-        border: 1px solid white;
+        border: 0.2px solid white;
         padding: 1rem 2rem;
         background: var(--background-color-abas2);
       } .rd_Tabs:checked ~ label {
+          border: 0.2px solid var(--background-color-abas-hover);
           color: var(--color-texto-abas-hover);
           background: var(--background-color-abas-hover);
         } 
         .rd_Tabs {
           display: none;
         }
-    .nav_Content {
-      width: 65%;
-      height: 25%;
-      background-color: red;
+    .tab_Content {
+      width: 100%;
+      height: 8.76rem;
+      display: none;
+      position: absolute;
+      left: 0;
+      text-align: center;
+      border-top: 1px solid var(--background-color-abas-hover);
+      background-color: var(--background-color-abas-hover);
+    } .rd_Tabs:checked ~ .tab_Content {
+        display: block;
+      } .tab_Content article {
+          padding: var(--padding-sub-containers);
+        }
+    /* ---------- Início Modal Pop-Up */
+    #botao_Excluir {
+      width: 150px;
+      height: 35px;
+      cursor: pointer;
+    } #botao_Excluir:hover {
+        color: white;
+        background-color: black;
+        transition: 1.5s;
+      }
+    .modal_Container {
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, .5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 20;
+      display: none;
+      justify-content: center;
+      align-items: center;
     }
-
+    .modal_Container.mostrar {
+      display: flex;
+    }
+    .modal {
+      background: white;
+      width: 25%;
+      padding: 2%;
+      border: 10px solid green;
+      box-shadow: 0 0 0 5px white;
+    }
+    @keyframes modal {
+      from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    .mostrar .modal { 
+      animation: modal .3s;
+    }
+    .c_Button {
+      cursor: pointer;
+      padding: 1% 3%;
+      background-color: #c2bcbc;
+    }
+    /* ---------- Fim Modal Pop-Up */
   /* ---------- Fim Divisão Footer 1 */
 
   /* ---------- Início Divisão Footer 2 */
@@ -167,7 +260,7 @@ footer {
     flex-grow: 1;
     flex-shrink: 1;
     text-align: center;
-    background: var(--background-image-footer2);
+    background: var(--background-image-back2);
   } section#area_Footer_2 a {
       color: var(--color-texto-link);
     }

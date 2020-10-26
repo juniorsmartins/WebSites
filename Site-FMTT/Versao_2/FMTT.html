@@ -25,18 +25,45 @@
 
   <body>
 
+    <!-- Início da seção Header -->
     <header>
-      <section id="area_Header_1" class="area_Header">area_Header_1</section>
-      <section id="area_Header_2" class="area_Header">area_Header_2</section>
-      <section id="area_Header_3" class="area_Header">area_Header_3</section>
+      <section id="area_Header_1">
+        <div id="Header_1_Esq">
+          Header_1_Esq
+        </div>
+        <div id="Header_1_Cen">
+          Header_1_Cen
+        </div>
+        <div id="Header_1_Dir">
+          Header_1_Dir
+        </div>
+      </section>
+      <section id="area_Header_2">
+        <div id="Header_2_Esq">
+          <img src="_imgs/logofmtt.gif" alt="logotipo da FMTT"/>
+        </div>
+        <div id="Header_2_Cen">
+          <h1>Federação<br/> Mato-grossense<br/> de Tênis</h1>
+        </div>
+        <div id="Header_2_Dir">
+          Header_2_Dir
+        </div>
+      </section>
+      <section id="area_Header_3">
+        <div id="Header_3">Header_3 slider</div>
+      </section>
     </header>
+    <!-- Fim da seção Header -->
 
 
+    <!-- Início da seção Main -->
     <main>
       <section id="" class="area_Main">area_Main</section>
     </main>
+    <!-- Fim da seção Main -->
 
 
+    <!-- Início da seção Footer -->
     <footer>
       <section id="area_Footer_1" class="area_Footer">
         <div class="nav_Tabs">
@@ -44,27 +71,36 @@
             <li>
               <input type="radio" name="tabs" id="tab1" class="rd_Tabs" checked/>
               <label for="tab1">Endereço</label>
-              <div class="tab_Content"></div>
+              <div class="tab_Content">
+                <article>Conteúdo Endereço</article>
+              </div>
             </li>
             <li>
               <input type="radio" name="tabs" id="tab2" class="rd_Tabs"/>
               <label for="tab2">Contato</label>
-              <div class="tab_Content"></div>
+              <div class="tab_Content">
+                <article>Conteúdo Contato</article>
+              </div>
             </li>
             <li>
               <input type="radio" name="tabs" id="tab3" class="rd_Tabs"/>
               <label for="tab3">Facebook</label>
-              <div class="tab_Content"></div>
+              <div class="tab_Content">
+                <article>Página Facebook</article>
+              </div>
             </li>
             <li>
               <input type="radio" name="tabs" id="tab4" class="rd_Tabs"/>
               <label for="tab4">Modal</label>
-              <div class="tab_Content"></div>
+              <div class="tab_Content">
+                <article>
+                  <input type="button" value="Excluir!" id="botao_Excluir" onclick="fun_Excluir()"/>
+                </article>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-
       <section id="area_Footer_2" class="area_Footer">
         <div>
           <p>Direitos Reservados 2020</p>
@@ -78,6 +114,21 @@
         </div>
       </section>
     </footer>
+    <!-- Fim da seção Footer -->
+
+
+    <!-- Início da seção Flutuante -->
+    <div id="modal_Promocao" class="modal_Container">
+      <div class="modal">
+        <h3 class="sub_Titulo">Confirma excluir?</h3>
+        <form>
+          <input type="button" class="c_Button" value="Sim!" onclick="fun_Voltar()"/>
+          <input type="button" class="c_Button" value="Não" onclick="fun_Voltar()"/>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="main1.js"></script>
+    <!-- Fim da seção Flutuante -->
 
   </body>
 </html>
