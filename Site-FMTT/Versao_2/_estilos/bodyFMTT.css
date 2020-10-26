@@ -35,6 +35,7 @@
   --padding-reset: 0;
   --padding-containers: 0.5rem 4rem;
   --padding-sub-containers: 0.5rem 0.2rem;
+  --padding-galeria-header: 0 1rem;
   --border-bottom-main-sections: 0.1rem solid #a7a4a4;
 
   font-size: 16px;
@@ -117,9 +118,73 @@ header {
     }
   section#area_Header_3 {
     grid-area: cabeca_Header3;
-    height: auto;
+    padding: var(--padding-galeria-header);
     background: var(--background-image-back3);
   }
+
+
+  /* ---------- Início Galeria de Fotos */
+  .container_Galeria {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+    @media (min-width: 780px) {
+        .container_Galeria {
+          width: 600px;
+          height: 380px;
+          margin: auto;
+        }
+          .container_Galeria img {width: 600px; height: 380px;}
+    }
+  .fotos_Galeria {
+    display: none;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.1);
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .legenda {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .imgslide {
+    width: 100%;
+  }
+  .numero_Fotos {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  @media (max-width: 768px) {
+    .numero_Fotos {
+      top: 15px;
+    }
+  }
+  /* ---------- Fim Galeria de Fotos */
 /* ---------------------- Fim do Header */
 
 

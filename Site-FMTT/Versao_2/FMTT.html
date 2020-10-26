@@ -17,7 +17,6 @@
     <!-- Início de seção Out File -->
     <link rel="shortcut icon" href="_imgs/icone-raquete.png" type="image/jpg" sizes="16x16"/>
     <link rel="stylesheet" type="text/css" href="_estilos/bodyFMTT.css"/>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Biblioteca de ícones -->
     <!-- Fim de seção Out File --> 
   </head>
@@ -50,8 +49,68 @@
           Header_2_Dir
         </div>
       </section>
+
       <section id="area_Header_3">
-        <div id="Header_3">Header_3 slider</div>
+        <div class="container_Galeria">
+
+          <div class="fotos_Galeria">
+              <div class="numero_Fotos">01 / 05</div>
+              <img class="imgslide" src="_imgs/galeria1.png" alt="foto de tenista"/>
+              <div class="legenda">
+                <h3>Wesley 'Piu' Nunes</h3>
+                <p>Campeão do Open de Tênis Dona do Lar na 1ª Classe Pro<br/>
+                Fotógrafo: Junior Martins</p>
+              </div>
+          </div>
+
+          <div class="fotos_Galeria">
+              <div class="numero_Fotos">02 / 05</div>
+              <img class="imgslide" src="_imgs/galeria2.png" alt="foto de tenista"/>
+              <div class="legenda">
+                <h3>Wesley 'Piu' Nunes</h3>
+                <p>Campeão do Open de Tênis Dona do Lar na 1ª Classe Pro<br/>
+                Fotógrafo: Junior Martins</p>
+              </div>
+          </div>
+
+          <div class="fotos_Galeria"> 
+              <div class="numero_Fotos">03 / 05</div>
+              <img class="imgslide" src="_imgs/galeria3.png" alt="foto de tenista"/>
+              <div class="legenda">
+                <h3>Marlus Cristiano</h3>
+                <p>Campeão do Open de Tênis Dona do Lar na 1ª Classe Acima de 34<br/>
+                Fotógrafo: Junior Martins</p>
+              </div>
+          </div>
+
+          <div class="fotos_Galeria"> 
+              <div class="numero_Fotos">04 / 05</div>
+              <img class="imgslide" src="_imgs/galeria4.png" alt="foto de tenista"/>
+              <div class="legenda">
+                <h3>Pedro Nunes</h3>
+                <p>Vice-campeão do Open de Tênis Dona do Lar na 1ª Classe Acima de 34<br/>
+                Fotógrafo: Junior Martins</p>
+              </div>
+          </div>
+
+          <div class="fotos_Galeria"> 
+              <div class="numero_Fotos">05 / 05</div>
+              <img class="imgslide" src="_imgs/galeria5.png" alt="foto de tenista"/>
+              <div class="legenda">
+                <h3>Maralice Lopes</h3>
+                <p>Campeã do Open de Tênis Dona do Lar na 1ª Classe Feminina<br/>
+                Fotógrafo: Junior Martins</p>
+              </div>
+          </div>
+
+          <a class="prev" onclick="muda_Foto(-1)">&#10094;</a>
+          <a class="next" onclick="muda_Foto(1)">&#10095;</a>
+
+          <!-- Início de seção Out File do JavaScript -->
+          <script type="text/javascript" src="FMTT.js"></script>
+          <!-- Fim de seção Out File do JavaScript -->
+        </div>
+
       </section>
     </header>
     <!-- Fim da seção Header -->
@@ -59,7 +118,9 @@
 
     <!-- Início da seção Main -->
     <main>
-      <section id="" class="area_Main">area_Main</section>
+      <section id="container_Galeria" class="area_Main">
+        area_Main
+      </section>
     </main>
     <!-- Fim da seção Main -->
 
@@ -128,7 +189,6 @@
         </form>
       </div>
     </div>
-    <script type="text/javascript" src="main1.js"></script>
     <!-- Fim da seção Flutuante -->
 
   </body>
