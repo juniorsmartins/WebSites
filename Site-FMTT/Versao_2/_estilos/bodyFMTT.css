@@ -22,8 +22,9 @@
   --background-color-abas-hover: #30BF6E;
   --background-image-body: url(../_imgs/_backs/back01.png) repeat;
   --background-image-footer1: url(../_imgs/_backs/back_2.png) repeat;
-  --background-image-footer1: url() repeat;
+  --background-image-back1: url(../_imgs/_backs/back_1.png) repeat;
   --background-image-back2: url(../_imgs/_backs/back_2.png) repeat;
+  --background-image-back3: url(../_imgs/_backs/back_3.png) repeat;
   --tam-grid-columns-body: 33% 34% 33%;
   --color-texto: #FAFAFA;
   --color-texto-menu-hover: #F2CD5E;
@@ -73,6 +74,7 @@ body {
 header {
   grid-area: cabeca_Header;
   display: grid;
+  color: white;
   grid-template-areas: 
     "cabeca_Header1 cabeca_Header1 cabeca_Header1"
     "cabeca_Header2 cabeca_Header2 cabeca_Header2"
@@ -82,43 +84,41 @@ header {
 } section#area_Header_1 {
     grid-area: cabeca_Header1;
     display: grid;
+    height: auto;
     grid-template-areas: 
       "cabeca_Header1_1 cabeca_Header1_2 cabeca_Header1_3";
     grid-template-columns: var(--tam-grid-columns-body);
-    background: var(--background-image-back2);
+    background: var(--background-image-back3);
   } #Header_1_Esq {
       grid-area: cabeca_Header1_1;
-      border: 1px solid red;
     } 
     #Header_1_Cen {
       grid-area: cabeca_Header1_2;
-      border: 1px solid green;
     }
     #Header_1_Dir {
       grid-area: cabeca_Header1_3;
-      border: 1px solid violet;
     }
   section#area_Header_2 {
     grid-area: cabeca_Header2;
     display: grid;
+    height: auto;
     grid-template-areas: 
       "cabeca_Header2_1 cabeca_Header2_2 cabeca_Header2_3";
     grid-template-columns: var(--tam-grid-columns-body);
+    background: var(--background-image-back2);
   } #Header_2_Esq {
       grid-area: cabeca_Header2_1;
-      border: 1px solid red;
     } #Header_2_Esq img {width: 20%; padding: 0.4rem;}
     #Header_2_Cen {
       grid-area: cabeca_Header2_2;
-      border: 1px solid green;
     } #Header_2_Cen h1 {font-size: 2rem; padding: 0.4rem; color: white;}
     #Header_2_Dir {
       grid-area: cabeca_Header2_3;
-      border: 1px solid violet;
     }
   section#area_Header_3 {
     grid-area: cabeca_Header3;
-    border: 1px solid white;
+    height: auto;
+    background: var(--background-image-back3);
   }
 /* ---------------------- Fim do Header */
 
