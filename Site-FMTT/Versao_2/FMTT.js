@@ -2,35 +2,43 @@
 /* JavaScript Geral */
 
 
+/* ---------------------- Início Menu Hamburguer */
+function menuOnClick() {
+  document.getElementById("menu_Bar").classList.toggle("change");
+  document.getElementById("nave").classList.toggle("change");
+  document.getElementById("menu_Bg").classList.toggle("change_Bg");
+}
+/* ---------------------- Fim Menu Hamburguer */
+
+
 
 /* ---------------------- Início Galeria de Fotos */
 var slideIndex = 1;
 showSlides(slideIndex);
 
-function muda_Foto(n) {
+// Next/previous controls
+function plusSlides(n) {
   showSlides(slideIndex += n);
+  ga('send', 'event', 'galeria', 'next_prev', 'Titulo da página');
 }
 
+// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("fotos_Galeria");
-
+  var i;
+  var slides = document.getElementsByClassName("slides");
   if (n > slides.length) {
     slideIndex = 1
   }
-
   if (n < 1) {
     slideIndex = slides.length
   }
-
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-
   slides[slideIndex - 1].style.display = "block";
 }
 /* ---------------------- Fim Galeria de Fotos */
