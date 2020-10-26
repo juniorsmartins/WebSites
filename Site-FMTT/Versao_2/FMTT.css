@@ -25,6 +25,8 @@
   --background-image-back1: url(_imgs/_backs/back_1.png) repeat;
   --background-image-back2: url(_imgs/_backs/back_2.png) repeat;
   --background-image-back3: url(_imgs/_backs/back_3.png) repeat;
+  --cor-menu-hamburguer: #FF4500;
+  --cor-texto-opcoes-burguer: #FF4500;
   --tam-grid-columns-body: 1fr 1fr 1fr;
   --color-texto: #FAFAFA;
   --color-texto-menu-hover: #F2CD5E;
@@ -136,15 +138,15 @@ header {
 
   #menu_Bar {
     width: 3.2rem;
-    height: 1.5rem;
+    height: 1.7rem;
     margin: 4.3rem 0 0 3.2rem;
     cursor: pointer;
   }
 
   .bar {
-    height: 5px;
+    height: 0.4rem;
     width: 100%;
-    background-color: #FF4500;
+    background-color: var(--cor-menu-hamburguer);
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -152,9 +154,6 @@ header {
 
   #bar1 {
     transform: translateY(-4px);
-  }
-
-  #bar2 {
   }
 
   #bar3 {
@@ -166,15 +165,15 @@ header {
     display: none;
   }
     .nave ul {
-      padding: 0 22px;
+      padding: 1rem 0 0 2.2rem;
     }
     .nave li {
       list-style: none;
-      padding: 12px 0;
+      padding: 1rem 0.2rem;
     }
     .nave li a {
-      color: white;
-      font-size: 20px;
+      color: var(--cor-texto-opcoes-burguer);
+      font-size: 1.3rem;
       text-decoration: none;
     }
     .nave li a:hover {
@@ -191,7 +190,7 @@ header {
     z-index: 1;
     width: 0;
     height: 0;
-    margin: 30px 0 20px 20px;
+    margin: 5.5rem 0 1.5rem 1.5rem;
     background: radial-gradient(circle, #F2CD5E, #F2CD5E);
     border-radius: 50%;
     transition: 0.3s ease;
