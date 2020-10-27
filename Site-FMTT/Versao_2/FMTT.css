@@ -395,6 +395,58 @@ footer {
       } .tab_Content article {
           padding: var(--padding-sub-containers);
         }
+
+    /* ---------- Início Menu Retrátil */
+    .menu {
+      width: 100%;
+      height: auto;
+      font-family: 'Arial';
+    }
+
+    .menu ul {
+      list-style: none;
+      position: relative;
+    }
+
+    .menu ul li {
+      width: 25%;
+      float: left;
+    }
+
+    .menu a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 2%;
+      color: var(--color-texto-link);
+      background-color: var(--color-back-link);
+    }
+
+    .menu a:hover {
+      color: var(--color-texto-menu-hover);
+      background-color: var(--background-color-menu-hover);
+      transition: all 1s;
+    }
+
+    .menu ul ul {
+      position: absolute;
+      visibility: hidden;
+    }
+
+    .menu ul li:hover ul {
+      visibility: visible;
+      transition: all 1s;
+    }
+
+    .menu ul ul li {
+      float: none;
+      width: 300%;
+      margin-left: 100%;
+      border-bottom: solid 1px #f4f4f4;
+    }
+    /* ---------- Fim Menu Retrátil */
+
     /* ---------- Início Modal Pop-Up */
     #botao_Excluir {
       width: 150px;
