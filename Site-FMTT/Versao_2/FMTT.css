@@ -325,6 +325,12 @@ main {
   padding: var(--padding-containers);
   background: var(--background-color-main);
 }
+.area_Main { 
+  width: 100%;
+  height: 30rem;
+  border: 1px solid white;
+  padding: var(--padding-sub-containers);
+}
 /* ---------------------- Fim do Main */
 
 
