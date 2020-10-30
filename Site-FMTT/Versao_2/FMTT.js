@@ -16,13 +16,13 @@ function menuOnClick() {
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Próximo
 function plusSlides(n) {
   showSlides(slideIndex += n);
   ga('send', 'event', 'galeria', 'next_prev', 'Titulo da página');
 }
 
-// Thumbnail image controls
+// Controle de Imagens
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
