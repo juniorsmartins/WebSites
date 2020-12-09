@@ -23,28 +23,25 @@
     </ul>
     <div class="container">
         <div class="row">
-            <h1>Cav42</h1>
+            <h1>Incluir</h1>
         </div>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="imgs/slide_1.png" alt="Primeiro Slide">
+        <div class="row">
+            <form action="http://ijournalist.jor.br/inserir.php" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control form-control-lg" id="nome" name="nome">
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="imgs/slide_2.png" alt="Segundo Slide">
+                <div class="form-group">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" class="form-control form-control-lg" id="sobrenome" name="sobrenome">
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="imgs/slide_3.png" alt="Terceiro Slide">
+                <div class="form-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-control form-control-lg" id="cpf" name="cpf">
                 </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
+                <button type="submit" class="btn btn-primary">Incluir</button>
+            </form>
+
         </div>
 
     </div>

@@ -9,6 +9,20 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="incluir.html">Incluir</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="selecionar.php">Listar</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="listar.html">Editar</a>
+        </li>
+    </ul>
   <div class="container">
           <div class="row">
               <h1>Listar</h1>
