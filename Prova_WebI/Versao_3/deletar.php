@@ -2,7 +2,7 @@
 include 'conect.php';
 try {
 
-$sql = "DELETE FROM cliente WHERE id = '1' ";
+$sql = "DELETE FROM cliente WHERE id = '5' ";
 
  // Prepare statement
 $stmt = $pdo->prepare($sql);
