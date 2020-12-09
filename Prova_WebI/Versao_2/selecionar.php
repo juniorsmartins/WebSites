@@ -11,22 +11,22 @@
 <body>
  <div class="container">
         <div class="row">
-            <h1>Listar Carro</h1>
+            <h1>Listar Cliente</h1>
         </div>
  <div class="row">  
 <table class="table">
                 <tr>
-                    <td>Modelo</td>
-                    <td>Marca</td>
-                    <td>Ano</td>
-                    <td>Ação</td>
+                    <td>ID</td>
+                    <td>Nome</td>
+                    <td>Sobrenome</td>
+                    <td>CPF</td>
  </tr>  
 <?php 
 include 'conect.php';
 
  // SUA CONSULTA DEVE SER REALIZADA AQUI
 // ALTERE PARA O NOME DA SUA TABELA
- $consulta = "Select * from veiculo";
+ $consulta = "Select * from CLIENTE";
 
 //VOCÊ DEVE TROCAR SOMENTE O NOME DAS COLUNAS DA TABELA IGUAL ESTÁ ESCRITO AQUI
 
@@ -36,8 +36,8 @@ include 'conect.php';
          while ($rs = $stmt->fetch(PDO::FETCH_OBJ)) {
                  
                     echo "<tr>";
-                    echo "<td>".$rs->id."</td><td>".$rs->marca."</td>
-                    <td>".$rs->modelo."</td><td>".$rs->ano."</td>";
+                    echo "<td>".$rs->id."</td><td>".$rs->nome."</td>
+                    <td>".$rs->sobrenome."</td><td>".$rs->cpf."</td>";
 					echo "</tr>";
                 }
             } else {

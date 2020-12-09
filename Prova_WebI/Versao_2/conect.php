@@ -3,7 +3,7 @@
        $host = "database-1.csjo8phyf7yn.us-east-1.rds.amazonaws.com";
        $usuario = "root";
        $senha = "2020senaimt";
-       $nome_banco = "ads_2020";
+       $nome_banco = "bd_cav42";
 
 $pdo = new PDO("mysql:host=".$host.";dbname=".$nome_banco."", $usuario, $senha);
 

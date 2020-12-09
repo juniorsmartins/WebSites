@@ -2,12 +2,12 @@
 include 'conect.php';
 // Altere as variáveis  aqui
 
-$modelo = $_POST["modelo"];
-$marca = $_POST["marca"];
-$ano = $_POST["ano"];
+$nome = $_POST["nome"];
+$sobrenome = $_POST["sobrenome"];
+$cpf = $_POST["cpf"];
 
-$consulta = "INSERT INTO veiculo(marca, modelo, ano) "."
- VALUES('".$marca."' ,'".$modelo." ', '".$ano."' ) ";
+$consulta = "INSERT INTO CLIENTE(nome, sobrenome, cpf) "."
+ VALUES('".$nome."' ,'".$sobrenome." ', '".$cpf."' ) ";
 
 try{
  $ins = $pdo->prepare($consulta);
